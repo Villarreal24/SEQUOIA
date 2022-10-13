@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": "/img/works/2.jpg",
+    "title": "Modern Townhouse",
+    "tags": [
+      "Architecture",
+      "Modern"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "/img/works/1.jpg",
+    "title": "Modern Townhouse",
+    "tags": [
+      "Architecture",
+      "Modern"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "/img/works/5.jpg",
+    "title": "Modern Townhouse",
+    "tags": [
+      "Architecture",
+      "Modern"
+    ]
+  },
+  {
+    "id": 4,
+    "image": "/img/works/3.jpg",
+    "title": "Modern Townhouse",
+    "tags": [
+      "Architecture",
+      "Modern"
+    ]
+  },
+  {
+    "id": 5,
+    "image": "/img/works/4.jpg",
+    "title": "Modern Townhouse",
+    "tags": [
+      "Architecture",
+      "Modern"
+    ]
+  }
+]

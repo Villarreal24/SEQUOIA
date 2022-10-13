@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "/img/clients/brands/01.png",
+    "website": "www.Arch.com"
+  },
+  {
+    "id": 2,
+    "image": "/img/clients/brands/02.png",
+    "website": "www.Arch.com"
+  },
+  {
+    "id": 3,
+    "image": "/img/clients/brands/03.png",
+    "website": "www.Arch.com"
+  },
+  {
+    "id": 4,
+    "image": "/img/clients/brands/04.png",
+    "website": "www.Arch.com"
+  },
+  {
+    "id": 5,
+    "image": "/img/clients/brands/05.png",
+    "website": "www.Arch.com"
+  },
+  {
+    "id": 6,
+    "image": "/img/clients/brands/06.png",
+    "website": "www.Arch.com"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "background": "/img/slid/01.jpg",
+    "type": "interior",
+    "title": "design agency"
+  },
+  {
+    "background": "/img/slid/02.jpg",
+    "type": "Innovative",
+    "title": "Interior Design"
+  },
+  {
+    "background": "/img/slid/03.jpg",
+    "type": "Elegant",
+    "title": "Unique Design"
+  }
+]

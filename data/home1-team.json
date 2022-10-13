@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "image": "/img/team/1.jpg",
+    "position-circle": "CEO Manager CEO Manager CEO Manager",
+    "name": "Ryan Hicks",
+    "position": "Client Manager"
+  },
+  {
+    "id": 2,
+    "image": "/img/team/2.jpg",
+    "position-circle": "Interior Designer Interior Designer Interior Designer",
+    "name": "Ryan Hicks",
+    "position": "Client Manager"
+  },
+  {
+    "id": 3,
+    "image": "/img/team/3.jpg",
+    "position-circle": "Landscape Designer Landscape Designer Landscape Designer",
+    "name": "Ryan Hicks",
+    "position": "Client Manager"
+  },
+  {
+    "id": 4,
+    "image": "/img/team/4.jpg",
+    "position-circle": "Client Manager Client Manager Client Manager",
+    "name": "Ryan Hicks",
+    "position": "Client Manager"
+  }
+]

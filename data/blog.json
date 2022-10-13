@@ -1,0 +1,32 @@
+{
+  "title": "Build a Beautiful Blog With Ease",
+  "info": {
+    "author": "Alex Smith",
+    "date": "August 6 , 2019",
+    "tag": "Web Design"
+  },
+  "image": "img/blog/single.jpg",
+  "comments": [
+    {
+      "image": "/img/blog/01.jpg",
+      "author": "Jorden Griffin",
+      "content": "the main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment.",
+      "date": "6 Aug 2019",
+      "relped": false
+    },
+    {
+      "image": "/img/blog/01.jpg",
+      "author": "Jorden Griffin",
+      "content": "the main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment.",
+      "date": "6 Aug 2019",
+      "relped": true
+    },
+    {
+      "image": "/img/blog/01.jpg",
+      "author": "Jorden Griffin",
+      "content": "the main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment.",
+      "date": "6 Aug 2019",
+      "relped": false
+    }
+  ]
+}

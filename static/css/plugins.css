@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: architec
+	Theme URI: http://
+	Description: The Multi-Purpose Template
+	Author: ThemesCamp
+	Author URI: http://themeforest.net/user/ThemesCamp
+	Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+			[ All Css Plugins & Helper Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import "./plugins/bootstrap.min.css";
+
+/* == animate css == */
+@import "./plugins/animate.css";
+
+/* == ionicons icon font == */
+@import "./plugins/ionicons.min.css";
+
+/* == pe-icon-7-stroke == */
+@import "./plugins/pe-icon-7-stroke.css";
+
+/* == flaticon font == */
+@import "./plugins/flaticon.css";
+
+/* == fontawesome icon font == */
+@import "./plugins/fontawesome-all.min.css";
+
+/* == slick carousel == */
+@import "./plugins/slick.css";
+@import "./plugins/slick-theme.css";
+
+/* == swiper.min font == */
+@import "./plugins/swiper.min.css";

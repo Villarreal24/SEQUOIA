@@ -1,0 +1,103 @@
+{
+  "filters": [
+    {
+      "name": "All",
+      "operator": "*"
+    },
+    {
+      "name": "Interior",
+      "operator": ".interior"
+    },
+    {
+      "name": "Theaters",
+      "operator": ".theaters"
+    },
+    {
+      "name": "Residential",
+      "operator": ".residential"
+    }
+  ],
+  "works": [
+    {
+      "filter": "theaters",
+      "image": "/img/works/col/01.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "residential interior",
+      "image": "/img/works/col/02.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "interior",
+      "image": "/img/works/col/03.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "residential",
+      "image": "/img/works/col/04.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "theaters",
+      "image": "/img/works/col/05.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "residential",
+      "image": "/img/works/col/06.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "residential interior",
+      "image": "/img/works/col/07.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "interior",
+      "image": "/img/works/col/08.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "theaters",
+      "image": "/img/works/col/09.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    }
+  ]
+}

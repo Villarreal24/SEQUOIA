@@ -1,0 +1,20 @@
+[
+  {
+    "background": "/img/01.jpg",
+    "title": "Architecture",
+    "description": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+    "icon": "home-1"
+  },
+  {
+    "background": "/img/02.jpg",
+    "title": "Interior Design",
+    "description": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+    "icon": "living-room"
+  },
+  {
+    "background": "/img/03.jpg",
+    "title": "3D Modeling",
+    "description": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+    "icon": "interior-design"
+  }
+]

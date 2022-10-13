@@ -1,0 +1,18 @@
+{
+  "video": {
+    "channel": "vimeo",
+    "id": "127203262"
+  },
+  "stats": [
+    {
+      "title": "Happy Clients",
+      "number": 3,
+      "operator": "K"
+    },
+    {
+      "title": "Success Projects",
+      "number": 14,
+      "operator": "K"
+    }
+  ]
+}

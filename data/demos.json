@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Home Light",
+    "image": "/demos/01.png",
+    "link": "/home1-light"
+  },
+  {
+    "title": "Interiors Light",
+    "image": "/demos/02.png",
+    "link": "/home2-light"
+  },
+  {
+    "title": "Architecture Light",
+    "image": "/demos/03.png",
+    "link": "/home3-light"
+  },
+  {
+    "title": "Home Default",
+    "image": "/demos/4.png",
+    "link": "/home1"
+  },
+  {
+    "title": "Architecture Studio",
+    "image": "/demos/1.png",
+    "link": "/home4"
+  },
+  {
+    "title": "Creative Architecture",
+    "image": "/demos/2.png",
+    "link": "/home3"
+  },
+  {
+    "title": "About Us",
+    "image": "/demos/5.png",
+    "link": "/about"
+  },
+  {
+    "title": "Works 2 Column",
+    "image": "/demos/6.png",
+    "link": "/work1"
+  },
+  {
+    "title": "Interior Agency",
+    "image": "/demos/3.png",
+    "link": "/home2"
+  },
+  {
+    "title": "Works 3 Column",
+    "image": "/demos/7.png",
+    "link": "/work2"
+  },
+  {
+    "title": "Works 4 Column",
+    "image": "/demos/8.png",
+    "link": "/work3"
+  },
+  {
+    "title": "Contact Us",
+    "image": "/demos/9.png",
+    "link": "/contact"
+  }
+]

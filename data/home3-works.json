@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "type": "Interior",
+    "title": "Exterior Designs",
+    "image": "/img/portfolio/full/01.jpg"
+  },
+  {
+    "id": 2,
+    "type": "Interior",
+    "title": "Maroon Beach Hotel",
+    "image": "/img/portfolio/full/02.jpg"
+  },
+  {
+    "id": 3,
+    "type": "Interior",
+    "title": "Apartment Renovation",
+    "image": "/img/portfolio/full/03.jpg"
+  },
+  {
+    "id": 4,
+    "type": "Interior",
+    "title": "Modern Minimalist House",
+    "image": "/img/portfolio/full/04.jpg"
+  }
+]

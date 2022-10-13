@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "quote": "I just love their design for all stunning details. You must know what can you do for a project before taking it, but with Archo, the sky is the limit.",
+    "author": "Mitchl Jhon",
+    "position": "Envato Customer",
+    "image": "/img/clients/1.jpg"
+  },
+  {
+    "id": 2,
+    "quote": "I just love their design for all stunning details. You must know what can you do for a project before taking it, but with Archo, the sky is the limit.",
+    "author": "Jane Smith",
+    "position": "Envato Customer",
+    "image": "/img/clients/2.jpg"
+  },
+  {
+    "id": 3,
+    "quote": "I just love their design for all stunning details. You must know what can you do for a project before taking it, but with Archo, the sky is the limit.",
+    "author": "Alison Clutcher",
+    "position": "Envato Customer",
+    "image": "/img/clients/3.jpg"
+  },
+  {
+    "id": 4,
+    "quote": "I just love their design for all stunning details. You must know what can you do for a project before taking it, but with Archo, the sky is the limit.",
+    "author": "Peter Jefferson",
+    "position": "Envato Customer",
+    "image": "/img/clients/4.jpg"
+  }
+]

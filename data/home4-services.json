@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Architecture",
+    "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+    "icon": "home"
+  },
+  {
+    "id": 2,
+    "title": "Interior Design",
+    "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+    "icon": "kitchen-2"
+  },
+  {
+    "id": 3,
+    "title": "3D Modeling",
+    "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+    "icon": "plan"
+  },
+  {
+    "id": 4,
+    "title": "Repair",
+    "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+    "icon": "renovation"
+  }
+]

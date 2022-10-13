@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "img/clients/1.jpg",
+    "name": "Alex Regelman",
+    "position": "Co-founder, Colabrio",
+    "comment": "Working with Arch digital agency to support our organic and paid social media activity has extended the marketing activities we are able to achieve."
+  },
+  {
+    "id": 2,
+    "image": "img/clients/1.jpg",
+    "name": "Alex Regelman",
+    "position": "Co-founder, Colabrio",
+    "comment": "Working with Arch digital agency to support our organic and paid social media activity has extended the marketing activities we are able to achieve."
+  },
+  {
+    "id": 3,
+    "image": "img/clients/1.jpg",
+    "name": "Alex Regelman",
+    "position": "Co-founder, Colabrio",
+    "comment": "Working with Arch digital agency to support our organic and paid social media activity has extended the marketing activities we are able to achieve."
+  }
+]

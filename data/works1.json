@@ -1,0 +1,67 @@
+{
+  "filters": [
+    {
+      "name": "All",
+      "operator": "*"
+    },
+    {
+      "name": "Interior",
+      "operator": ".interior"
+    },
+    {
+      "name": "Theaters",
+      "operator": ".theaters"
+    },
+    {
+      "name": "Residential",
+      "operator": ".residential"
+    }
+  ],
+  "works": [
+    {
+      "filter": "theaters",
+      "image": "/img/works/2.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "interior residential",
+      "image": "/img/works/1.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "interior",
+      "image": "/img/works/5.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "residential",
+      "image": "/img/works/3.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    },
+    {
+      "filter": "theaters",
+      "image": "/img/works/4.jpg",
+      "title": "Modern Townhouse",
+      "tags": [
+        "Architecture",
+        "Modern"
+      ]
+    }
+  ]
+}

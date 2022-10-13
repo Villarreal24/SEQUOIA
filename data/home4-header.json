@@ -1,0 +1,35 @@
+[
+  {
+    "background": "/img/slid/1.jpg",
+    "title": [
+      "Right design and right ideas matter a lot of in interior design business.",
+      "a style that makes a statement."
+    ],
+    "tags": [
+      "Innovative",
+      "Architecture"
+    ]
+  },
+  {
+    "background": "/img/slid/2.jpg",
+    "title": [
+      "Right design and right ideas matter a lot of in interior design business.",
+      "a style that makes a statement."
+    ],
+    "tags": [
+      "Classic",
+      "and Modern"
+    ]
+  },
+  {
+    "background": "/img/slid/3.jpg",
+    "title": [
+      "Right design and right ideas matter a lot of in interior design business.",
+      "a style that makes a statement."
+    ],
+    "tags": [
+      "Elegant &",
+      "Unique Design"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/img/blog/1.jpg",
+    "date": "14 august",
+    "author": "David Faber",
+    "tag": "Branding",
+    "title": "How to use solid color combine with simple furnitures"
+  },
+  {
+    "id": 2,
+    "image": "/img/blog/2.jpg",
+    "date": "14 august",
+    "author": "David Faber",
+    "tag": "Branding",
+    "title": "Double rectangle houses from old containers"
+  },
+  {
+    "id": 3,
+    "image": "/img/blog/3.jpg",
+    "date": "14 august",
+    "author": "David Faber",
+    "tag": "Branding",
+    "title": "Double rectangle houses from old containers"
+  }
+]

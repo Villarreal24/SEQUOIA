@@ -1,0 +1,26 @@
+[
+  {
+    "id": "01",
+    "image": "/img/process/01.jpg",
+    "title": "Concept",
+    "text": "Nulla metus metus ullamcorper vel tincidunt sed euismod."
+  },
+  {
+    "id": "02",
+    "image": "/img/process/02.jpg",
+    "title": "Design Process",
+    "text": "Nulla metus metus ullamcorper vel tincidunt sed euismod."
+  },
+  {
+    "id": "03",
+    "image": "/img/process/03.jpg",
+    "title": "Supervision",
+    "text": "Nulla metus metus ullamcorper vel tincidunt sed euismod."
+  },
+  {
+    "id": "04",
+    "image": "/img/process/04.jpg",
+    "title": "Budget Planning",
+    "text": "Nulla metus metus ullamcorper vel tincidunt sed euismod."
+  }
+]

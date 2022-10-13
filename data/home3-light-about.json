@@ -1,0 +1,25 @@
+{
+  "video": {
+    "id": "AzwC6umvd1s",
+    "channel": "youtube"
+  },
+  "text": "Architecture bibendum pharetra eleifend. Suspendisse vel volutpat purus, sit amet bibendum nisl. mollis turpis a ipsum ultes, nec condi mentum ipsum consequat. Mauris vitae consequat nibh, vitae interdum mi.",
+  "services": [
+    {
+      "id": "01",
+      "title": "Design Project"
+    },
+    {
+      "id": "02",
+      "title": "Interior Visualization"
+    },
+    {
+      "id": "03",
+      "title": "Landscape Design"
+    },
+    {
+      "id": "04",
+      "title": "Architect Services"
+    }
+  ]
+}
