@@ -1,15 +1,15 @@
 {
+  "BlogsBlogs": {
+    "description": "Auto imported from components/Blogs-Blogs/index.vue"
+  },
   "AboutAbout": {
     "description": "Auto imported from components/About-About/index.vue"
-  },
-  "AboutHeader": {
-    "description": "Auto imported from components/About-Header/index.vue"
   },
   "AboutSkills": {
     "description": "Auto imported from components/About-Skills/index.vue"
   },
-  "BlogsBlogs": {
-    "description": "Auto imported from components/Blogs-Blogs/index.vue"
+  "AboutHeader": {
+    "description": "Auto imported from components/About-Header/index.vue"
   },
   "ContactForm": {
     "description": "Auto imported from components/Contact-Sections/Contact-Form.vue"
@@ -38,14 +38,14 @@
   "Home1About": {
     "description": "Auto imported from components/Home1-About/index.vue"
   },
-  "Home1Header": {
-    "description": "Auto imported from components/Home1-Header/index.vue"
-  },
   "Home1LightAbout": {
     "description": "Auto imported from components/Home1-Light-About/index.vue"
   },
   "Home1LightContact": {
     "description": "Auto imported from components/Home1-Light-Contact/index.vue"
+  },
+  "Home1Header": {
+    "description": "Auto imported from components/Home1-Header/index.vue"
   },
   "Home1LightHeader": {
     "description": "Auto imported from components/Home1-Light-Header/index.vue"
@@ -110,11 +110,11 @@
   "Home2LightProcess": {
     "description": "Auto imported from components/Home2-Light-Process/index.vue"
   },
-  "Home2LightTestimonials": {
-    "description": "Auto imported from components/Home2-Light-Testimonials/index.vue"
-  },
   "Home2LightServices": {
     "description": "Auto imported from components/Home2-Light-Services/index.vue"
+  },
+  "Home2LightTestimonials": {
+    "description": "Auto imported from components/Home2-Light-Testimonials/index.vue"
   },
   "Home2LightWorks": {
     "description": "Auto imported from components/Home2-Light-Works/index.vue"
@@ -146,11 +146,11 @@
   "Home3LightHeader": {
     "description": "Auto imported from components/Home3-Light-Header/index.vue"
   },
-  "Home3LightServices": {
-    "description": "Auto imported from components/Home3-Light-Services/index.vue"
-  },
   "Home3LightNumbers": {
     "description": "Auto imported from components/Home3-Light-Numbers/index.vue"
+  },
+  "Home3LightServices": {
+    "description": "Auto imported from components/Home3-Light-Services/index.vue"
   },
   "Home3LightSlider": {
     "description": "Auto imported from components/Home3-Light-Slider/index.vue"

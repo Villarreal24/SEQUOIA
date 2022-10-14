@@ -7,17 +7,17 @@
             <div class="row justify-content-center">
               <div class="col-lg-7 col-md-9">
                 <div class="caption center">
-                  <h1 data-splitting class="playfont">
+                  <h2 data-splitting class="playfont">
                     <NuxtLink to="#0">
                       <template v-for="tag, index in slide.tags">
                         {{ tag }}
                         <br v-if="index !== slide.tags.length - 1" :key="index" />
                       </template>
                     </NuxtLink>
-                  </h1>
+                  </h2>
                   <p>{{ slide.title }} </p>
                   <NuxtLink to="#0" class="btn-curve btn-color mt-20">
-                    <span>Discover Work</span>
+                    <span>Ver mas detalles</span>
                   </NuxtLink>
                 </div>
               </div>

@@ -7,8 +7,9 @@ export const state = () => ({
 export const mutations = {
     setTareas(state, payload) {
         state.tareas = payload
-        console.log(state.tareas);
     }
 }
 
-export const actions = {}
+export const actions = {
+
+}

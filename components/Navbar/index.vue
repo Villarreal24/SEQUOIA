@@ -2,7 +2,7 @@
   <nav :ref="nr" class="navbar navbar-expand-lg">
     <div class="container">
       <!-- Logo -->
-      <NuxtLink to="/" class="logo">
+      <NuxtLink to="/home1-light" class="logo">
         <img ref="lr" src="/img/logo-light.png"  alt="logo" v-if="showLogo !== false" />
       </NuxtLink>
 
@@ -24,47 +24,19 @@
       <!-- navbar links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown" @click="handleDropdown">
-            <span
-              class="nav-link dropdown-toggle"
-              data-toggle="dropdown"
-              role="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Home
-            </span>
-            <div class="dropdown-menu">
-              <NuxtLink class="dropdown-item" to="/home1">Home Default</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/home2">Interior Agency</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/home3">Creative Arch</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/home4">Architecture Studio</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/home1-light">Home Light</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/home2-light">Interior Light</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/home3-light">Architecture Light</NuxtLink>
-            </div>
+          <li class="nav-item">
+            <NuxtLink class="nav-link" to="/home3-light">Compra</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink class="nav-link" to="/about">About</NuxtLink>
+            <NuxtLink class="nav-link" to="/home3-light">Vende</NuxtLink>
           </li>
-          <li class="nav-item dropdown" @click="handleDropdown">
-            <span
-              class="nav-link dropdown-toggle"
-              data-toggle="dropdown"
-              role="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Portfolio
-            </span>
-            <div class="dropdown-menu">
-              <NuxtLink class="dropdown-item" to="/works1">Two Column</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/works2">Three Column</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/works3">Four Column</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/project-details">Single Project</NuxtLink>
-            </div>
+          <li class="nav-item">
+            <NuxtLink class="nav-link" to="/home3-light">Renta</NuxtLink>
           </li>
-          <li class="nav-item dropdown" @click="handleDropdown">
+          <!-- <li class="nav-item">
+            <NuxtLink class="nav-link" to="/home3-light">Capitaliza</NuxtLink>
+          </li> -->
+          <!-- <li class="nav-item dropdown" @click="handleDropdown">
             <span
               class="nav-link dropdown-toggle"
               data-toggle="dropdown"
@@ -78,9 +50,30 @@
               <NuxtLink class="dropdown-item" to="/blog">Blogs</NuxtLink>
               <NuxtLink class="dropdown-item" to="/blog-details">Post Details</NuxtLink>
             </div>
+          </li> -->
+          <li class="nav-item">
+            <NuxtLink class="nav-link" to="/about">Sobre nosotros</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink class="nav-link" to="/contact">Contact</NuxtLink>
+            <NuxtLink class="nav-link" to="/contact">Contacto</NuxtLink>
+          </li>
+          <li class="nav-item" v-if="!logIn">
+            <NuxtLink class="nav-link" to="/contact">Iniciar sesión</NuxtLink>
+          </li>
+          <li class="nav-item dropdown" @click="handleDropdown" v-if="logIn">
+            <span
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Cuenta
+            </span>
+            <div class="dropdown-menu" >
+              <NuxtLink class="dropdown-item" to="/blog">Perfil</NuxtLink>
+              <NuxtLink class="dropdown-item" to="/blog-details">Cerrar sesión</NuxtLink>
+            </div>
           </li>
         </ul>
       </div>
@@ -94,6 +87,11 @@ import getSiblings from "../../common/getSiblings";
 export default {
   name: 'Navbar',
   props: ["lr", "theme", "nr", "showLogo"],
+  data() {
+    return {
+      logIn: false
+    }
+  },
   methods: {
     handleDropdown: (e) => {
       getSiblings(e.target.parentElement).filter((item) => item.classList.contains("show")).map((item) => {

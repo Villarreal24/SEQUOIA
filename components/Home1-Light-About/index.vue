@@ -48,18 +48,17 @@ export default {
   name: "Home1-Light-About",
   data() {
     return {
-      aboutData: Home1LightAboutData
+      aboutData: Home1LightAboutData,
     }
   },
-  fetch({store}) {
-    return db.collection('Tareas').get()
+  async fetch() {
+    await db.collection('Tareas').get()
     .then(query => {
       const tareas = []
-      console.log("Hola");
       query.forEach(element => {
         tareas.push(element.data())
       });
-      store.commit('setTareas', tareas)
+      this.$store.commit('setTareas', tareas)
     })
     .catch(function(err) {
       console.log(err);
