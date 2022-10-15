@@ -52,17 +52,17 @@ export default {
     }
   },
   async fetch() {
-    await db.collection('Tareas').get()
-    .then(query => {
-      const tareas = []
-      query.forEach(element => {
-        tareas.push(element.data())
-      });
-      this.$store.commit('setTareas', tareas)
-    })
-    .catch(function(err) {
-      console.log(err);
-    })
+    // await db.collection('Tareas').get()
+    // .then(query => {
+    //   const tareas = []
+    //   query.forEach(element => {
+    //     tareas.push(element.data())
+    //   });
+    //   this.$store.commit('setTareas', tareas)
+    // })
+    // .catch(function(err) {
+    //   console.log(err);
+    // })
   }
 }
 </script>

@@ -5,27 +5,27 @@
         <div class="col-lg-4">
           <div class="item md-mb50">
             <div class="title">
-              <h5>Contact Us</h5>
+              <h5>Contactanos</h5>
             </div>
             <ul>
               <li>
                 <span class="icon pe-7s-map-marker"></span>
                 <div class="cont">
-                  <h6>Officeal Address</h6>
+                  <h6>Dirección oficial</h6>
                   <p>{{ appData.address.street }} . {{ appData.address.city }}, {{ appData.address.state }} , {{ appData.address.country }}</p>
                 </div>
               </li>
               <li>
                 <span class="icon pe-7s-mail"></span>
                 <div class="cont">
-                  <h6>Email Us</h6>
+                  <h6>Correo electronico</h6>
                   <p>{{ appData.email }}</p>
                 </div>
               </li>
               <li>
                 <span class="icon pe-7s-call"></span>
                 <div class="cont">
-                  <h6>Call Us</h6>
+                  <h6>Llamanos</h6>
                   <p>{{ appData.phone }}</p>
                 </div>
               </li>
@@ -35,7 +35,7 @@
         <div class="col-lg-4">
           <div class="item md-mb50">
             <div class="title">
-              <h5>Recent News</h5>
+              <h5>Noticias recientes</h5>
             </div>
             <ul>
               <li v-for="item in appData.footerNews" :key="item.id">
@@ -49,7 +49,7 @@
               </li>
               <li>
                 <div class="subscribe">
-                  <input type="text" placeholder="Type Your Email">
+                  <input type="text" placeholder="Escribe tu correo electrónico">
                   <span class="subs pe-7s-paper-plane"></span>
                 </div>
               </li>

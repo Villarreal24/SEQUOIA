@@ -19,6 +19,7 @@ const _6e522919 = () => interopDefault(import('..\\pages\\project-details\\index
 const _76f5277e = () => interopDefault(import('..\\pages\\works1\\index.vue' /* webpackChunkName: "pages/works1/index" */))
 const _7ea6ccdd = () => interopDefault(import('..\\pages\\works2\\index.vue' /* webpackChunkName: "pages/works2/index" */))
 const _f34f1b88 = () => interopDefault(import('..\\pages\\works3\\index.vue' /* webpackChunkName: "pages/works3/index" */))
+const _50069f56 = () => interopDefault(import('..\\pages\\venta\\venta.vue' /* webpackChunkName: "pages/venta/venta" */))
 const _e5eb7366 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -92,6 +93,10 @@ export const routerOptions = {
     path: "/works3",
     component: _f34f1b88,
     name: "works3"
+  }, {
+    path: "/venta/venta",
+    component: _50069f56,
+    name: "venta-venta"
   }, {
     path: "/",
     component: _e5eb7366,

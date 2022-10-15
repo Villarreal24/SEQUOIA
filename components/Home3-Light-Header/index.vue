@@ -2,7 +2,7 @@
   <header class="slider text-center">
     <swiper ref="Swiper" :options="swiperOptions" @ready="handleSwiperReadied" class="parallax-slider">
       <swiper-slide v-for="slide, idx in slides" :key="idx">
-        <div class="bg-img valign" :style="`background-image:url('${slide.background}')`" :data-overlay-dark="idx !== slides.length -1 ? 6:0">
+        <div class="bg-img valign" :style="`background-image:url('${slide.background}')`" :data-overlay-dark="idx !== slides.length ? 6:0">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-7 col-md-9">
@@ -41,9 +41,8 @@
 
     <div class="social-icon">
       <a href="#0"><i class="fab fa-facebook-f"></i></a>
+      <a href="#0"><i class="fab fa-instagram"></i></a>
       <a href="#0"><i class="fab fa-twitter"></i></a>
-      <a href="#0"><i class="fab fa-behance"></i></a>
-      <a href="#0"><i class="fab fa-pinterest-p"></i></a>
     </div>
   </header>
 </template>

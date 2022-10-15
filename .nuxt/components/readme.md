@@ -6,10 +6,10 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
-- `<BlogsBlogs>` | `<blogs-blogs>` (components/Blogs-Blogs/index.vue)
 - `<AboutAbout>` | `<about-about>` (components/About-About/index.vue)
-- `<AboutSkills>` | `<about-skills>` (components/About-Skills/index.vue)
 - `<AboutHeader>` | `<about-header>` (components/About-Header/index.vue)
+- `<AboutSkills>` | `<about-skills>` (components/About-Skills/index.vue)
+- `<BlogsBlogs>` | `<blogs-blogs>` (components/Blogs-Blogs/index.vue)
 - `<ContactForm>` | `<contact-form>` (components/Contact-Sections/Contact-Form.vue)
 - `<ContactInfo>` | `<contact-info>` (components/Contact-Sections/Contact-Info.vue)
 - `<ContactMap>` | `<contact-map>` (components/Contact-Sections/Contact-Map.vue)
@@ -19,9 +19,9 @@ You can directly use them in pages and other components without the need to impo
 - `<Footer>` | `<footer>` (components/Footer/index.vue)
 - `<Header2>` | `<header2>` (components/Header2/index.vue)
 - `<Home1About>` | `<home1-about>` (components/Home1-About/index.vue)
+- `<Home1Header>` | `<home1-header>` (components/Home1-Header/index.vue)
 - `<Home1LightAbout>` | `<home1-light-about>` (components/Home1-Light-About/index.vue)
 - `<Home1LightContact>` | `<home1-light-contact>` (components/Home1-Light-Contact/index.vue)
-- `<Home1Header>` | `<home1-header>` (components/Home1-Header/index.vue)
 - `<Home1LightHeader>` | `<home1-light-header>` (components/Home1-Light-Header/index.vue)
 - `<Home1LightNews>` | `<home1-light-news>` (components/Home1-Light-News/index.vue)
 - `<Home1LightServices>` | `<home1-light-services>` (components/Home1-Light-Services/index.vue)
