@@ -2,25 +2,25 @@
   {
     "id": "01",
     "image": "/img/process/01.jpg",
-    "title": "Concept",
+    "title": "Carta de intención",
     "text": "Nulla metus metus ullamcorper vel tincidunt sed euismod."
   },
   {
     "id": "02",
     "image": "/img/process/02.jpg",
-    "title": "Design Process",
+    "title": "Validación de carta",
     "text": "Nulla metus metus ullamcorper vel tincidunt sed euismod."
   },
   {
     "id": "03",
     "image": "/img/process/03.jpg",
-    "title": "Supervision",
-    "text": "Nulla metus metus ullamcorper vel tincidunt sed euismod."
+    "title": "Compra de bienes raices",
+    "text": "Elige el terreno que se adapte a ti y tus necesidades."
   },
   {
     "id": "04",
     "image": "/img/process/04.jpg",
-    "title": "Budget Planning",
-    "text": "Nulla metus metus ullamcorper vel tincidunt sed euismod."
+    "title": "0% comisiones",
+    "text": "Durante el proceso de compra no cobramos ninguna comisión."
   }
 ]

@@ -6,7 +6,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8 col-sm-10">
               <h6 class="custom-font wow fadeInDown" data-wow-delay=".3s">Best Works</h6>
-              <h4 class="playfont wow flipInX" data-wow-delay=".5s">Our Portfolio</h4>
+              <h4 class="playfont wow flipInX" data-wow-delay=".5s">Nuestro portafolio</h4>
             </div>
           </div>
         </div>
@@ -15,7 +15,8 @@
         <!-- filter links -->
         <div class="filtering text-center col-12 wow fadeInUp" data-wow-delay=".3s">
           <div class="filter bg-img bg-repeat" style="background-image:url('/img/line-pattern1.png')">
-            <span v-for="filter, idx in works.filters" :key="idx" :data-filter='filter.operator' :class="{active: idx === 0}">
+            <span v-for="filter, idx in works.filters" :key="idx" :data-filter='filter.operator'
+              :class="{active: idx === 0}">
               {{ filter.name }}
             </span>
           </div>
@@ -23,8 +24,10 @@
         <!-- gallery -->
         <div class="gallery twsty full-width">
           <!-- gallery item -->
-          <div :class="`items ${work.filter} mt-50 wow fadeInUp`" data-wow-delay=".3s" v-for="work, idx in works.works" :key="idx">
-            <div class="item-img bg-img wow imago" data-background="img/portfolio/mas/01.jpg" :style="`background-image:url('${work.image}')`">
+          <div :class="`items ${work.filter} mt-50 wow fadeInUp`" data-wow-delay=".3s" v-for="work, idx in works.works"
+            :key="idx">
+            <div class="item-img bg-img wow imago" data-background="img/portfolio/mas/01.jpg"
+              :style="`background-image:url('${work.image}')`">
               <NuxtLink to="#0">
                 <div class="item-img-overlay"></div>
               </NuxtLink>
@@ -53,7 +56,7 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-     initIsotope(); 
+      initIsotope();
     });
   }
 }

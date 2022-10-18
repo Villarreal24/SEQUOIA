@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 col-md-8 col-sm-10">
             <h6 class="custom-font wow fadeInDown" data-wow-delay=".3s">How We Do It</h6>
-            <h4 class="playfont wow flipInX" data-wow-delay=".5s">Work Process</h4>
+            <h4 class="playfont wow flipInX" data-wow-delay=".5s">Proceso de compra</h4>
           </div>
         </div>
       </div>

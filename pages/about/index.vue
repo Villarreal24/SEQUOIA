@@ -3,9 +3,10 @@
     <Navbar ref="navbar" />
     <About-Header />
     <About-About />
-    <Home3-Services />
-    <Home1-Testimonials />
-    <Home3-Team />
+    <!-- <Home3-Services /> -->
+    <!-- <Home1-Testimonials /> -->
+    <!-- <Home3-Team /> -->
+    <Home1-Light-Team />
     <About-Skills />
     <Footer />
   </div>
@@ -14,7 +15,7 @@
 <script>
 export default {
   name: 'About',
-  layout: "dark",
+  layout: "light",
   head() {
     return {
       titleTemplate: "%s - About",

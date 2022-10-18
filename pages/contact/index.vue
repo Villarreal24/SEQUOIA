@@ -10,7 +10,7 @@
 <script>
 export default {
   name: 'Contact',
-  layout: "dark",
+  layout: "light",
   head() {
     return {
       titleTemplate: "%s - Contact",

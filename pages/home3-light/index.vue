@@ -4,8 +4,8 @@
     <Home3-Light-Header />
     <!-- <Home3-Light-Services /> -->
     <!-- <Home3-Light-Works /> -->
-    <Home2-About />
-    <WorksWorks3 />
+    <Home2-Light-Process />
+    <Home1-Light-Works />
     <!-- <Home3-Light-About /> -->
     <!-- <Home3-Light-Slider /> -->
     <!-- <Home3-Light-Numbers /> -->
@@ -20,7 +20,7 @@
 import WorksWorks2 from '../../components/Works-Works2/index.vue';
 import WorksWorks3 from '../../components/Works-Works3/index.vue';
 export default {
-    name: "Home3-Light",
+    name: "Compra",
     layout: "light",
     head() {
         return {

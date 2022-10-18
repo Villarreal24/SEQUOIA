@@ -4,9 +4,9 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="cont text-center">
-            <h1>About Us</h1>
+            <h1>Sobre nosotros</h1>
             <div class="path">
-              <NuxtLink to="/">Home</NuxtLink><span>/</span><NuxtLink to="/about" class="active">About Us</NuxtLink>
+              <NuxtLink to="/home1-light">Inicio</NuxtLink><span>/</span><NuxtLink to="/about" class="active">Sobre nosotros</NuxtLink>
             </div>
           </div>
         </div>

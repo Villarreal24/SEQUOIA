@@ -10,7 +10,7 @@
 <script>
 export default {
   name: 'BlogDetails',
-  layout: "dark",
+  layout: "light",
   head() {
     return {
       titleTemplate: "%s - Post Details",

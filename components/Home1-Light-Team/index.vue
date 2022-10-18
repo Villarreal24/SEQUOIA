@@ -4,8 +4,8 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="tit">
-            <h6 class="custom-font mb-10 wow fadeInDown" data-wow-delay=".3s">Some thoughts from Us</h6>
-            <h3 class="wow flipInX" data-wow-delay=".5s">Our Employees</h3>
+            <h6 class="custom-font mb-10 wow fadeInDown" data-wow-delay=".3s">Algunas cosas de nosotros</h6>
+            <h3 class="wow flipInX" data-wow-delay=".5s">Nuestros equipo</h3>
             <p class="wow fadeInUp" data-wow-delay=".3s">
               We feel proud for our expert team members beatae ipsum dolor sit amet, consectetur adipisicing elit mauris vitae consequat nibh, vitae interdum mi.
             </p>
