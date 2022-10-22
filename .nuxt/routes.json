@@ -18,6 +18,12 @@
     "chunkName": "pages/blog-details/index"
   },
   {
+    "name": "compra",
+    "path": "/compra",
+    "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\compra\\\\index.vue",
+    "chunkName": "pages/compra/index"
+  },
+  {
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\contact\\\\index.vue",
@@ -54,22 +60,28 @@
     "chunkName": "pages/home3/index"
   },
   {
-    "name": "home3-light",
-    "path": "/home3-light",
-    "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\home3-light\\\\index.vue",
-    "chunkName": "pages/home3-light/index"
-  },
-  {
     "name": "home4",
     "path": "/home4",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\home4\\\\index.vue",
     "chunkName": "pages/home4/index"
   },
   {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\login\\\\index.vue",
+    "chunkName": "pages/login/index"
+  },
+  {
     "name": "project-details",
     "path": "/project-details",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\project-details\\\\index.vue",
     "chunkName": "pages/project-details/index"
+  },
+  {
+    "name": "renta",
+    "path": "/renta",
+    "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\renta\\\\index.vue",
+    "chunkName": "pages/renta/index"
   },
   {
     "name": "works1",
@@ -88,12 +100,6 @@
     "path": "/works3",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\works3\\\\index.vue",
     "chunkName": "pages/works3/index"
-  },
-  {
-    "name": "venta-venta",
-    "path": "/venta/venta",
-    "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\venta\\\\venta.vue",
-    "chunkName": "pages/venta/venta"
   },
   {
     "name": "index",

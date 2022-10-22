@@ -10,7 +10,7 @@
 <script>
 export default {
   name: 'Blogs',
-  layout: "dark",
+  layout: "light",
   head() {
     return {
       titleTemplate: "%s - Blogs",
@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      title: "Our Blogs",
+      title: "Nuestros Blogs",
       fullPath: [
         { title: 'Blogs', link: "/blog" }
       ]

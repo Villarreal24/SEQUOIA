@@ -8,12 +8,6 @@
   "AboutSkills": {
     "description": "Auto imported from components/About-Skills/index.vue"
   },
-  "BlogsBlogs": {
-    "description": "Auto imported from components/Blogs-Blogs/index.vue"
-  },
-  "DemosHeader": {
-    "description": "Auto imported from components/Demos-Header/index.vue"
-  },
   "ContactForm": {
     "description": "Auto imported from components/Contact-Sections/Contact-Form.vue"
   },
@@ -26,11 +20,17 @@
   "ContactSections": {
     "description": "Auto imported from components/Contact-Sections/index.vue"
   },
-  "Footer": {
-    "description": "Auto imported from components/Footer/index.vue"
+  "BlogsBlogs": {
+    "description": "Auto imported from components/Blogs-Blogs/index.vue"
+  },
+  "DemosHeader": {
+    "description": "Auto imported from components/Demos-Header/index.vue"
   },
   "DemosMasonery": {
     "description": "Auto imported from components/Demos-Masonery/index.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer/index.vue"
   },
   "Header2": {
     "description": "Auto imported from components/Header2/index.vue"
@@ -41,11 +41,11 @@
   "Home1Header": {
     "description": "Auto imported from components/Home1-Header/index.vue"
   },
-  "Home1LightContact": {
-    "description": "Auto imported from components/Home1-Light-Contact/index.vue"
-  },
   "Home1LightAbout": {
     "description": "Auto imported from components/Home1-Light-About/index.vue"
+  },
+  "Home1LightContact": {
+    "description": "Auto imported from components/Home1-Light-Contact/index.vue"
   },
   "Home1LightHeader": {
     "description": "Auto imported from components/Home1-Light-Header/index.vue"
@@ -211,6 +211,12 @@
   },
   "Loading": {
     "description": "Auto imported from components/Loading/index.vue"
+  },
+  "LoginHeader": {
+    "description": "Auto imported from components/Login/Header.vue"
+  },
+  "LoginForm": {
+    "description": "Auto imported from components/Login/Login-Form.vue"
   },
   "ModalVideo": {
     "description": "Auto imported from components/Modal-video/index.vue"

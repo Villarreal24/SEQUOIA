@@ -1,10 +1,10 @@
-import firebase from "firebase/compat/app";
+import firebase from "firebase/app";
 
 
-require("firebase/compat/firestore");
-require("firebase/compat/auth");
-require("firebase/compat/storage");
-require("firebase/compat/functions");
+require("firebase/firestore");
+require("firebase/auth");
+require("firebase/storage");
+require("firebase/functions");
 
 const config = {
   apiKey: "AIzaSyADFHq2e7t4AslCTeAcKSHW7J4EkpklHcg",
@@ -17,9 +17,9 @@ const config = {
 };
 
 // Initialize Firebase
-// if (!firebase.getApps.length) {
-  const app = firebase.initializeApp(config);
-// }
+if (!firebase.apps.length) {
+  firebase.initializeApp(config);
+}
 
 const auth = firebase.auth();
 const db = firebase.firestore();

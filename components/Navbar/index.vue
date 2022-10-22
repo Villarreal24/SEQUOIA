@@ -24,19 +24,19 @@
       <!-- navbar links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item">
+            <NuxtLink class="nav-link" to="/home3-light">Compra</NuxtLink>
+          </li>
           <li class="nav-item">
             <NuxtLink class="nav-link" to="/home3-light">Compra</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink class="nav-link" to="/home3-light">Vende</NuxtLink>
-          </li>
-          <li class="nav-item">
-            <NuxtLink class="nav-link" to="/home3-light">Renta</NuxtLink>
-          </li>
+            <NuxtLink class="nav-link" to="/renta">Renta</NuxtLink>
+          </li> -->
           <!-- <li class="nav-item">
             <NuxtLink class="nav-link" to="/home3-light">Capitaliza</NuxtLink>
           </li> -->
-          <!-- <li class="nav-item dropdown" @click="handleDropdown">
+          <li class="nav-item dropdown" @click="handleDropdown">
             <span
               class="nav-link dropdown-toggle"
               data-toggle="dropdown"
@@ -44,13 +44,17 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Blog
+              Funciones
             </span>
             <div class="dropdown-menu">
-              <NuxtLink class="dropdown-item" to="/blog">Blogs</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/blog-details">Post Details</NuxtLink>
+              <NuxtLink class="dropdown-item" to="/compra">Compra</NuxtLink>
+              <NuxtLink class="dropdown-item" to="/home3-light">Venta</NuxtLink>
+              <NuxtLink class="dropdown-item" to="/renta">Renta</NuxtLink>
             </div>
-          </li> -->
+          </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link" to="/blog">Blog</NuxtLink>
+          </li>
           <li class="nav-item">
             <NuxtLink class="nav-link" to="/about">Sobre nosotros</NuxtLink>
           </li>
@@ -58,7 +62,7 @@
             <NuxtLink class="nav-link" to="/contact">Contacto</NuxtLink>
           </li>
           <li class="nav-item" v-if="!logIn">
-            <NuxtLink class="nav-link" to="/contact">Iniciar sesión</NuxtLink>
+            <NuxtLink class="nav-link" to="/login">Iniciar sesión</NuxtLink>
           </li>
           <li class="nav-item dropdown" @click="handleDropdown" v-if="logIn">
             <span

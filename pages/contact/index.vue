@@ -18,9 +18,9 @@ export default {
   },
   data() {
     return {
-      title: "Contact Us",
+      title: "Contactanos",
       fullPath: [
-        { title: 'Contact Us', link: "/contact" }
+        { title: 'Contactanos', link: "/contact" }
       ]
     }
   },

@@ -7,19 +7,20 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _bbbd400c = () => interopDefault(import('..\\pages\\about\\index.vue' /* webpackChunkName: "pages/about/index" */))
 const _660ee8aa = () => interopDefault(import('..\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
 const _b5f04bd4 = () => interopDefault(import('..\\pages\\blog-details\\index.vue' /* webpackChunkName: "pages/blog-details/index" */))
+const _5487a78f = () => interopDefault(import('..\\pages\\compra\\index.vue' /* webpackChunkName: "pages/compra/index" */))
 const _e88acb72 = () => interopDefault(import('..\\pages\\contact\\index.vue' /* webpackChunkName: "pages/contact/index" */))
 const _a44ed996 = () => interopDefault(import('..\\pages\\home1\\index.vue' /* webpackChunkName: "pages/home1/index" */))
 const _198cd64c = () => interopDefault(import('..\\pages\\home1-light\\index.vue' /* webpackChunkName: "pages/home1-light/index" */))
 const _94eb8ed8 = () => interopDefault(import('..\\pages\\home2\\index.vue' /* webpackChunkName: "pages/home2/index" */))
 const _43c28f2a = () => interopDefault(import('..\\pages\\home2-light\\index.vue' /* webpackChunkName: "pages/home2-light/index" */))
 const _8588441a = () => interopDefault(import('..\\pages\\home3\\index.vue' /* webpackChunkName: "pages/home3/index" */))
-const _ba9ecaec = () => interopDefault(import('..\\pages\\home3-light\\index.vue' /* webpackChunkName: "pages/home3-light/index" */))
 const _7624f95c = () => interopDefault(import('..\\pages\\home4\\index.vue' /* webpackChunkName: "pages/home4/index" */))
+const _784dd29e = () => interopDefault(import('..\\pages\\login\\index.vue' /* webpackChunkName: "pages/login/index" */))
 const _6e522919 = () => interopDefault(import('..\\pages\\project-details\\index.vue' /* webpackChunkName: "pages/project-details/index" */))
+const _47d3445f = () => interopDefault(import('..\\pages\\renta\\index.vue' /* webpackChunkName: "pages/renta/index" */))
 const _76f5277e = () => interopDefault(import('..\\pages\\works1\\index.vue' /* webpackChunkName: "pages/works1/index" */))
 const _7ea6ccdd = () => interopDefault(import('..\\pages\\works2\\index.vue' /* webpackChunkName: "pages/works2/index" */))
 const _f34f1b88 = () => interopDefault(import('..\\pages\\works3\\index.vue' /* webpackChunkName: "pages/works3/index" */))
-const _50069f56 = () => interopDefault(import('..\\pages\\venta\\venta.vue' /* webpackChunkName: "pages/venta/venta" */))
 const _e5eb7366 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -46,6 +47,10 @@ export const routerOptions = {
     component: _b5f04bd4,
     name: "blog-details"
   }, {
+    path: "/compra",
+    component: _5487a78f,
+    name: "compra"
+  }, {
     path: "/contact",
     component: _e88acb72,
     name: "contact"
@@ -70,17 +75,21 @@ export const routerOptions = {
     component: _8588441a,
     name: "home3"
   }, {
-    path: "/home3-light",
-    component: _ba9ecaec,
-    name: "home3-light"
-  }, {
     path: "/home4",
     component: _7624f95c,
     name: "home4"
   }, {
+    path: "/login",
+    component: _784dd29e,
+    name: "login"
+  }, {
     path: "/project-details",
     component: _6e522919,
     name: "project-details"
+  }, {
+    path: "/renta",
+    component: _47d3445f,
+    name: "renta"
   }, {
     path: "/works1",
     component: _76f5277e,
@@ -93,10 +102,6 @@ export const routerOptions = {
     path: "/works3",
     component: _f34f1b88,
     name: "works3"
-  }, {
-    path: "/venta/venta",
-    component: _50069f56,
-    name: "venta-venta"
   }, {
     path: "/",
     component: _e5eb7366,

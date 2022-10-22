@@ -4,7 +4,8 @@
     <Home3-Light-Header />
     <!-- <Home3-Light-Services /> -->
     <!-- <Home3-Light-Works /> -->
-    <Works-Works2 />
+    <Home2-Light-Process />
+    <Home1-Light-Works />
     <!-- <Home3-Light-About /> -->
     <!-- <Home3-Light-Slider /> -->
     <!-- <Home3-Light-Numbers /> -->
@@ -17,7 +18,7 @@
 
 <script>
 export default {
-  name: 'Home3-Light',
+  name: 'Renta',
   layout: "light",
   head() {
     return {
