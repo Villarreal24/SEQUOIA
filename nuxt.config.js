@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Archo',
+    title: 'SEQUOIA',
     htmlAttrs: {
       lang: 'en'
     },
@@ -75,7 +75,9 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ["vue-scrollto/nuxt", { duration: 1000 }]
+    ["vue-scrollto/nuxt", { duration: 1000 }],
+    ['bootstrap-vue/nuxt', {
+      icons: true }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

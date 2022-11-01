@@ -27,4 +27,4 @@ const increment = firebase.firestore.FieldValue.increment(1);
 const storage = firebase.storage();
 const functions = firebase.functions();
 
-export {db, auth, increment, storage, functions};
+export {db, auth, increment, storage, functions, firebase};

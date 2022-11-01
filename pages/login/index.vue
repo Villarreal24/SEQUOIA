@@ -1,14 +1,18 @@
 <template>
   <div>
-    <Navbar ref="navbar" />
+    <!-- <Navbar ref="navbar" theme="light" /> -->
     <LoginHeader />
   </div>
 </template>
 
 <script>
-
 export default {
-    name: "Login",
-    layout: "dark",
+  name: 'Renta',
+  layout: "light",
+  head() {
+    return {
+      titleTemplate: "%s - Architecture Light",
+    }
+  },
 }
 </script>

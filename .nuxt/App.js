@@ -6,6 +6,10 @@ import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
+import '..\\node_modules\\bootstrap\\dist\\css\\bootstrap.css'
+
+import '..\\node_modules\\bootstrap-vue\\dist\\bootstrap-vue.css'
+
 const _70c27262 = () => import('..\\layouts\\dark-green.vue'  /* webpackChunkName: "layouts/dark-green" */).then(m => sanitizeComponent(m.default || m))
 const _2d22906c = () => import('..\\layouts\\dark.vue'  /* webpackChunkName: "layouts/dark" */).then(m => sanitizeComponent(m.default || m))
 const _77a3b2e0 = () => import('..\\layouts\\light.vue'  /* webpackChunkName: "layouts/light" */).then(m => sanitizeComponent(m.default || m))

@@ -1,31 +1,74 @@
-import { db } from "~/plugins/firebase.js";
+import { db, auth, firebase } from "~/plugins/firebase.js";
 
 export const state = () => ({
-    tareas: {}
+    user: {}
 })
 
 export const mutations = {
-    setTareas(state, payload) {
-        state.tareas = payload
+    updateUser(state, payload) {
+        state.user = payload
     }
 }
 
 export const actions = {
-    async nuxtServerInit ({ commit }) {
-        console.log("probando");
-        await db.collection('Tareas').get()
-            .then(query => {
-                const tareas = []
-                query.forEach(element => {
-                    let tarea = element.data();
-                    tarea.id = element.id;
-                    tareas.push(tarea)
-                });
-                console.log(tareas);
-                commit('setTareas', tareas);
-            })
-            .catch(function (err) {
-                console.log(err);
-            })
+    // ==============================================
+    //          INICIO DE SESION POR GOOGLE
+    // ==============================================
+    async googleLogin({ commit }) {
+        const provider = await new firebase.auth.GoogleAuthProvider();
+        firebase.auth().lenguageCode = 'es';
+
+        try {
+            const result = await firebase.auth().signInWithPopup(provider);
+            const user = result.user;
+
+            // Colleccion usuarios
+            const usuario = {
+                uid: user.uid,
+                nombre: user.displayName,
+                email: user.email,
+                foto: user.photoURL
+            }
+
+            commit('updateUser', usuario)
+
+            // Guardar en Firestore
+            await db.collection('users').doc(usuario.uid).set(usuario)
+
+        } catch (error) {
+            console.log(error.message);
+        }
+    },
+    // ==============================================
+    //          INICIO DE SESION POR FACEBOOK
+    // ==============================================
+    async facebookLogin({ state, commit }) {
+        const provider = await new firebase.auth.FacebookAuthProvider();
+
+        try {
+            const result = await firebase.auth().signInWithPopup(provider);
+            const user = result.user;
+            console.log(user);
+
+            // Colleccion usuarios
+            const usuario = {
+                uid: user.uid,
+                nombre: user.displayName,
+                email: user.email,
+                foto: user.photoURL
+            }
+
+            commit('updateUser', usuario)
+
+            // Guardar en Firestore
+            await db.collection('users').doc(usuario.uid).set(usuario)
+
+        } catch (error) {
+            console.log(error.message);
+        }
     }
+}
+
+export const modules = {
+
 }

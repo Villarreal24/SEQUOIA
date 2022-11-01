@@ -1,31 +1,53 @@
 <template>
-  <section class="cont-map text-center">
-    <div class="col-lg-5 col-md-6 card wow fadeInDown" data-wow-delay=".3s">
-      <form id="contact-form" method="post" action="contact.php" @submit="onSubmit">
-        <div class="section-head">
-          <h2 class="text-black">Iniciar Sesion</h2>
-          <h4 class="playfont">Get In Touch</h4>
+  <b-card class="col-12 col-lg-6 col-xl-5 mx-auto p-4">
+    <div class="text-center" data-wow-delay=".3s">
+      <b-form @submit="onSubmit">
+        <div class="login-head">
+          <h4>Continuar para iniciar sesión</h4>
         </div>
-        <div class="messages" v-if="errMessage">{{ errMessage }}</div>
-        <div class="controls">
-          <div class="form-group">
-            <input id="form_name" type="text" name="name" placeholder="Name" required="required" v-model="name">
+        <!-- <div class="messages" v-if="errMessage">{{ errMessage }}</div> -->
+        <div class="text-center">
+          <b-form-group id="input-group-1" label="Correo electrónico" label-for="input-1">
+            <b-form-input id="input-1" v-model="email" type="email" placeholder="Ingresa email" required>
+            </b-form-input>
+          </b-form-group>
+          <b-form-input v-model="password" placeholder="*******"></b-form-input>
+          <div class="mt-4">
+            <b-button block type="submit" variant="success" @click="onSubmit">Iniciar sesión</b-button>
+            <!-- <button type="submit" class="btn-curve btn-color" @click="onSubmit"><span>Enviar mensaje</span></button> -->
           </div>
-          <div class="form-group">
-            <input id="form_email" type="email" name="email" placeholder="Email" required="required" v-model="email">
-          </div>
-          <div class="form-group">
-            <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"
-              v-model="message"></textarea>
-          </div>
-          <button type="submit" class="btn-curve btn-color" @click="onSubmit"><span>Send Message</span></button>
         </div>
-      </form>
+      </b-form>
     </div>
-  </section>
+    <div class="mt-4 text-center">
+      <div class="login-subtitle">
+        <h6 class="pb-3 text-extra-light-gray">O bien puedes</h6>
+      </div>
+
+      <div>
+        <b-button class="d-flex justify-content-between align-items-center" 
+          block variant="danger" @click="google()">
+            <b-icon icon="google" aria-hidden="true"></b-icon>Continuar con Google
+            <p></p>
+        </b-button>
+        <b-button class="d-flex justify-content-between align-items-center" 
+          block variant="primary" @click="facebook()">
+            <b-icon icon="facebook" aria-hidden="true"></b-icon>Continuar con Facebook
+            <p></p>
+        </b-button>
+      </div>
+    </div>
+    <hr class="mt-35 mb-4" style="height:1.3px; border:none; background-color:#C8C8C8;">
+    <div class="col-12 row login-help justify-content-between">
+      <h6 class="col-12 col-sm-5">No puedes inicar sesion?</h6>
+      <h6>▪</h6>
+      <h6 class="col-12 col-sm-6">Registrate para obtener una nueva cuenta</h6>
+    </div>
+  </b-card>
 </template>
 
 <script>
+
 export default {
   name: "Login-form",
   data() {
@@ -35,32 +57,36 @@ export default {
     }
   },
   methods: {
+    email() {
+      console.log("Email");
+    },
+    google() {
+      this.$store.dispatch('googleLogin');
+    },
+    facebook() {
+      this.$store.dispatch('facebookLogin');
+    },
     onSubmit(e) {
       e.preventDefault();
 
-      const contactData = {
-        name: this.name,
+      const data = {
         email: this.email,
-        message: this.message
+        password: this.password
       }
 
-      if (!this.validateForm(contactData)) return;
+      if (!this.validateForm(data)) return;
 
-      console.log(contactData);
+      console.log(data);
 
       this.errMessage = '';
     },
     validateForm(contactData) {
-      if (!contactData.name || !contactData.email || !contactData.message) {
+      if (!contactData.password || !contactData.email) {
         this.errMessage = 'Please fill in all fields';
         return false;
       }
-      if (contactData.name.length < 5) {
+      if (contactData.password.length < 5) {
         this.errMessage = 'Name must be at least 5 characters';
-        return false;
-      }
-      if (contactData.message.length < 10) {
-        this.errMessage = 'Message must be at least 10 characters';
         return false;
       }
       if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(contactData.email)) {

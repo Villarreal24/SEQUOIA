@@ -89,22 +89,22 @@ span, a, a:hover {
   color: inherit; }
 
 h1 {
-  font-size: 55px; }
+  font-size: 45px; }
 
 h2 {
-  font-size: 40px; }
-
-h3 {
-  font-size: 35px; }
-
-h4 {
   font-size: 30px; }
 
-h5 {
+h3 {
   font-size: 25px; }
 
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 15px; }
+
 h6 {
-  font-size: 18px; }
+  font-size: 12px; }
 
 h1, h2, h3, h4, h5 {
   margin: 0;
@@ -1024,13 +1024,13 @@ body {
 [data-overlay-light]:before {
   background: #fff; }
 
-[data-overlay-dark] h1,
+/* [data-overlay-dark] h1,
 [data-overlay-dark] h2,
 [data-overlay-dark] h3,
 [data-overlay-dark] h4,
 [data-overlay-dark] h5,
 [data-overlay-dark] h6,
-[data-overlay-dark] span,
+[data-overlay-dark] span, */
 .bg-dark h1,
 .bg-dark h2,
 .bg-dark h3,

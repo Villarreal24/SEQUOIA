@@ -14,6 +14,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_539879dc from 'nuxt_plugin_plugin_539879dc' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_ddc8c938 from 'nuxt_plugin_bootstrapvue_ddc8c938' // Source: .\\bootstrap-vue.js (mode: 'all')
 import nuxt_plugin_vuescrollto_28a94e34 from 'nuxt_plugin_vuescrollto_28a94e34' // Source: .\\vue-scrollto.js (mode: 'client')
 import nuxt_plugin_firebase_34d6f55a from 'nuxt_plugin_firebase_34d6f55a' // Source: ..\\plugins\\firebase.js (mode: 'all')
 import nuxt_plugin_vueAwesomeSwiper_282933cc from 'nuxt_plugin_vueAwesomeSwiper_282933cc' // Source: ..\\plugins\\vueAwesomeSwiper.js (mode: 'all')
@@ -89,7 +90,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Archo","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Archo - Onepage Multi-Purpose Vuejs Template"},{"hid":"keywords","name":"keywords","content":"Vue Nuxtjs template archo onepage themeforest"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Teko:300,400,500,600,700&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Playfair+Display:400,500,600,700,800,900&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"}],"script":[{"src":"\u002Fjs\u002Fwow.min.js"},{"src":"\u002Fjs\u002Fisotope.pkgd.min.js"},{"src":"\u002Fjs\u002Fpace.min.js"},{"src":"\u002Fjs\u002Fsplitting.min.js"},{"src":"\u002Fjs\u002FsimpleParallax.min.js"},{"src":"\u002Fjs\u002Fmain.js","mode":"client"}],"style":[]},
+    head: {"title":"SEQUOIA","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Archo - Onepage Multi-Purpose Vuejs Template"},{"hid":"keywords","name":"keywords","content":"Vue Nuxtjs template archo onepage themeforest"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Teko:300,400,500,600,700&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Playfair+Display:400,500,600,700,800,900&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"}],"script":[{"src":"\u002Fjs\u002Fwow.min.js"},{"src":"\u002Fjs\u002Fisotope.pkgd.min.js"},{"src":"\u002Fjs\u002Fpace.min.js"},{"src":"\u002Fjs\u002Fsplitting.min.js"},{"src":"\u002Fjs\u002FsimpleParallax.min.js"},{"src":"\u002Fjs\u002Fmain.js","mode":"client"}],"style":[]},
 
     store,
     router,
@@ -220,6 +221,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_539879dc === 'function') {
     await nuxt_plugin_plugin_539879dc(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_bootstrapvue_ddc8c938 === 'function') {
+    await nuxt_plugin_bootstrapvue_ddc8c938(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vuescrollto_28a94e34 === 'function') {

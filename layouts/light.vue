@@ -10,14 +10,14 @@
 <script>
 export default {
   name: 'light',
-  // head() {
-  //   return {
-  //     link: [
-  //       { rel: 'stylesheet', href: '/css/style-light.css' },
-  //       { rel: 'stylesheet', href: '/css/globals.css' }
-  //     ],
-  //   }
-  // },
+  head() {
+    return {
+      link: [
+        { rel: 'stylesheet', href: '/css/style-light.css' },
+        { rel: 'stylesheet', href: '/css/globals.css' }
+      ],
+    }
+  },
   mounted() {
     setTimeout(() => {
       Splitting({ target: "[data-splitting]" });
