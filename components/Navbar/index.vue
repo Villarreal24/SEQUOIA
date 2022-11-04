@@ -61,10 +61,10 @@
           <li class="nav-item">
             <NuxtLink class="nav-link" to="/contact">Contacto</NuxtLink>
           </li>
-          <li class="nav-item" v-if="!logIn">
+          <li class="nav-item" v-if="!isAuth">
             <NuxtLink class="nav-link" to="/login">Iniciar sesión</NuxtLink>
           </li>
-          <li class="nav-item dropdown" @click="handleDropdown" v-if="logIn">
+          <li class="nav-item dropdown" @click="handleDropdown" v-if="isAuth">
             <span
               class="nav-link dropdown-toggle"
               data-toggle="dropdown"
@@ -76,7 +76,11 @@
             </span>
             <div class="dropdown-menu" >
               <NuxtLink class="dropdown-item" to="/blog">Perfil</NuxtLink>
-              <NuxtLink class="dropdown-item" to="/blog-details">Cerrar sesión</NuxtLink>
+              <p class="dropdown-item" @click="logOut()">Cerrar sesion</p>
+              <!-- <NuxtLink class="dropdown-item" to="/blog-details"
+                @click="logOut()">  
+                  Cerrar sesión
+              </NuxtLink> -->
             </div>
           </li>
         </ul>
@@ -91,12 +95,18 @@ import getSiblings from "../../common/getSiblings";
 export default {
   name: 'Navbar',
   props: ["lr", "theme", "nr", "showLogo"],
-  data() {
-    return {
-      logIn: false
+  computed: {
+    isAuth() {
+      const user = this.$store.state.authUser
+      if (user !== null) {
+        return true
+      } else return false
     }
   },
   methods: {
+    async logOut() {
+      await this.$fire.auth.signOut();
+    },
     handleDropdown: (e) => {
       getSiblings(e.target.parentElement).filter((item) => item.classList.contains("show")).map((item) => {
         item.classList.remove("show");

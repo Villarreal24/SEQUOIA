@@ -25,18 +25,20 @@
       </div>
 
       <div>
-        <b-button class="d-flex justify-content-between align-items-center" 
-          block variant="danger" @click="google()">
-            <b-icon icon="google" aria-hidden="true"></b-icon>Continuar con Google
-            <p></p>
+        <b-button class="d-flex justify-content-between align-items-center" block variant="danger" @click="google()">
+          <b-icon icon="google" aria-hidden="true"></b-icon>Continuar con Google
+          <p></p>
         </b-button>
-        <b-button class="d-flex justify-content-between align-items-center" 
-          block variant="primary" @click="facebook()">
-            <b-icon icon="facebook" aria-hidden="true"></b-icon>Continuar con Facebook
-            <p></p>
+        <b-button class="d-flex justify-content-between align-items-center" block variant="primary" @click="facebook()">
+          <b-icon icon="facebook" aria-hidden="true"></b-icon>Continuar con Facebook
+          <p></p>
         </b-button>
       </div>
     </div>
+
+    <!-- Alert error -->
+    <p class="text-danger" v-if="error">{{ error }}</p>
+
     <hr class="mt-35 mb-4" style="height:1.3px; border:none; background-color:#C8C8C8;">
     <div class="col-12 row login-help justify-content-between">
       <h6 class="col-12 col-sm-5">No puedes inicar sesion?</h6>
@@ -49,22 +51,59 @@
 <script>
 
 export default {
+
   name: "Login-form",
   data() {
     return {
       email: '',
       password: '',
+      error: ''
     }
   },
   methods: {
+
     email() {
-      console.log("Email");
+      console.log("email");
     },
-    google() {
-      this.$store.dispatch('googleLogin');
+    async google() {
+      const provider = await new this.$fireModule.auth.GoogleAuthProvider();
+
+      this.login(provider);
     },
-    facebook() {
-      this.$store.dispatch('facebookLogin');
+    async facebook() {
+      const provider = await new this.$fireModule.auth.FacebookAuthProvider();
+
+      this.login(provider);
+    },
+    // ==============================================
+    //              INICIO DE SESION
+    // ==============================================
+    async login(provider) {
+
+        try {
+            const result = await this.$fire.auth.signInWithPopup(provider);
+            const user = result.user;
+
+            // Colleccion usuarios
+            const usuario = {
+                uid: user.uid,
+                nombre: user.displayName,
+                email: user.email,
+                foto: user.photoURL
+            }
+
+            // Guardar en Firestore
+            await this.$fire.firestore.collection('users').doc(usuario.uid).set(usuario)
+            this.$router.push('/compra')
+        } catch (e) {
+            e.message
+            if (e.message = 'Firebase: An account already exists with the same email address but different sign-in credentials. Sign in using a provider associated with this email address. (auth/account-exists-with-different-credential).') {
+              this.error = "La cuenta ya existe pero con un provedor diferente."
+            } else {
+              this.error = error;
+            }
+            
+        }
     },
     onSubmit(e) {
       e.preventDefault();

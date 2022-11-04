@@ -1,21 +1,15 @@
 {
-  "BlogsBlogs": {
-    "description": "Auto imported from components/Blogs-Blogs/index.vue"
-  },
   "AboutAbout": {
     "description": "Auto imported from components/About-About/index.vue"
-  },
-  "AboutSkills": {
-    "description": "Auto imported from components/About-Skills/index.vue"
   },
   "AboutHeader": {
     "description": "Auto imported from components/About-Header/index.vue"
   },
-  "DemosMasonery": {
-    "description": "Auto imported from components/Demos-Masonery/index.vue"
+  "AboutSkills": {
+    "description": "Auto imported from components/About-Skills/index.vue"
   },
-  "DemosHeader": {
-    "description": "Auto imported from components/Demos-Header/index.vue"
+  "BlogsBlogs": {
+    "description": "Auto imported from components/Blogs-Blogs/index.vue"
   },
   "ContactForm": {
     "description": "Auto imported from components/Contact-Sections/Contact-Form.vue"
@@ -29,11 +23,20 @@
   "ContactSections": {
     "description": "Auto imported from components/Contact-Sections/index.vue"
   },
+  "DemosHeader": {
+    "description": "Auto imported from components/Demos-Header/index.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/Footer/index.vue"
   },
+  "DemosMasonery": {
+    "description": "Auto imported from components/Demos-Masonery/index.vue"
+  },
   "Header2": {
     "description": "Auto imported from components/Header2/index.vue"
+  },
+  "Home1About": {
+    "description": "Auto imported from components/Home1-About/index.vue"
   },
   "Home1Header": {
     "description": "Auto imported from components/Home1-Header/index.vue"
@@ -41,14 +44,11 @@
   "Home1LightAbout": {
     "description": "Auto imported from components/Home1-Light-About/index.vue"
   },
-  "Home1About": {
-    "description": "Auto imported from components/Home1-About/index.vue"
+  "Home1LightHeader": {
+    "description": "Auto imported from components/Home1-Light-Header/index.vue"
   },
   "Home1LightContact": {
     "description": "Auto imported from components/Home1-Light-Contact/index.vue"
-  },
-  "Home1LightHeader": {
-    "description": "Auto imported from components/Home1-Light-Header/index.vue"
   },
   "Home1LightNews": {
     "description": "Auto imported from components/Home1-Light-News/index.vue"

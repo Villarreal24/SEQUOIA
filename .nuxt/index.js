@@ -16,7 +16,8 @@ import { createStore } from './store.js'
 import nuxt_plugin_plugin_539879dc from 'nuxt_plugin_plugin_539879dc' // Source: .\\components\\plugin.js (mode: 'all')
 import nuxt_plugin_bootstrapvue_ddc8c938 from 'nuxt_plugin_bootstrapvue_ddc8c938' // Source: .\\bootstrap-vue.js (mode: 'all')
 import nuxt_plugin_vuescrollto_28a94e34 from 'nuxt_plugin_vuescrollto_28a94e34' // Source: .\\vue-scrollto.js (mode: 'client')
-import nuxt_plugin_firebase_34d6f55a from 'nuxt_plugin_firebase_34d6f55a' // Source: ..\\plugins\\firebase.js (mode: 'all')
+import nuxt_plugin_index_59a9a426 from 'nuxt_plugin_index_59a9a426' // Source: .\\firebase\\index.js (mode: 'all')
+import nuxt_plugin_serviceauthinitialize_0e08bf0a from 'nuxt_plugin_serviceauthinitialize_0e08bf0a' // Source: .\\firebase\\service.auth.initialize.js (mode: 'all')
 import nuxt_plugin_vueAwesomeSwiper_282933cc from 'nuxt_plugin_vueAwesomeSwiper_282933cc' // Source: ..\\plugins\\vueAwesomeSwiper.js (mode: 'all')
 import nuxt_plugin_vueSlickCarousel_c20e2362 from 'nuxt_plugin_vueSlickCarousel_c20e2362' // Source: ..\\plugins\\vueSlickCarousel.js (mode: 'all')
 import nuxt_plugin_vueVimeoPlayer_6279d002 from 'nuxt_plugin_vueVimeoPlayer_6279d002' // Source: ..\\plugins\\vueVimeoPlayer.js (mode: 'all')
@@ -231,8 +232,12 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_vuescrollto_28a94e34(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_firebase_34d6f55a === 'function') {
-    await nuxt_plugin_firebase_34d6f55a(app.context, inject)
+  if (typeof nuxt_plugin_index_59a9a426 === 'function') {
+    await nuxt_plugin_index_59a9a426(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_serviceauthinitialize_0e08bf0a === 'function') {
+    await nuxt_plugin_serviceauthinitialize_0e08bf0a(app.context, inject)
   }
 
   if (typeof nuxt_plugin_vueAwesomeSwiper_282933cc === 'function') {

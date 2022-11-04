@@ -59,7 +59,7 @@ export const routerOptions = {
     component: _a44ed996,
     name: "home1"
   }, {
-    path: "/home1-light",
+    path: "/",
     component: _198cd64c,
     name: "home1-light"
   }, {
@@ -102,11 +102,13 @@ export const routerOptions = {
     path: "/works3",
     component: _f34f1b88,
     name: "works3"
-  }, {
-    path: "/",
-    component: _e5eb7366,
-    name: "index"
-  }],
+  }, 
+  // {
+  //   path: "/",
+  //   component: _e5eb7366,
+  //   name: "index"
+  // }
+],
 
   fallback: false
 }

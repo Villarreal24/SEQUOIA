@@ -1193,6 +1193,13 @@ body {
 .navbar .logo {
   width: 160px;
 }
+.login {
+  margin-bottom:7%;
+  width: 100%;
+}
+.login .logo {
+  width: 300px;
+}
 .navbar .icon-bar {
   color: #fff;
 }
