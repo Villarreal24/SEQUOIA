@@ -10,12 +10,12 @@ const _b5f04bd4 = () => interopDefault(import('..\\pages\\blog-details\\index.vu
 const _5487a78f = () => interopDefault(import('..\\pages\\compra\\index.vue' /* webpackChunkName: "pages/compra/index" */))
 const _e88acb72 = () => interopDefault(import('..\\pages\\contact\\index.vue' /* webpackChunkName: "pages/contact/index" */))
 const _a44ed996 = () => interopDefault(import('..\\pages\\home1\\index.vue' /* webpackChunkName: "pages/home1/index" */))
-const _198cd64c = () => interopDefault(import('..\\pages\\home1-light\\index.vue' /* webpackChunkName: "pages/home1-light/index" */))
 const _94eb8ed8 = () => interopDefault(import('..\\pages\\home2\\index.vue' /* webpackChunkName: "pages/home2/index" */))
 const _43c28f2a = () => interopDefault(import('..\\pages\\home2-light\\index.vue' /* webpackChunkName: "pages/home2-light/index" */))
 const _8588441a = () => interopDefault(import('..\\pages\\home3\\index.vue' /* webpackChunkName: "pages/home3/index" */))
 const _7624f95c = () => interopDefault(import('..\\pages\\home4\\index.vue' /* webpackChunkName: "pages/home4/index" */))
 const _784dd29e = () => interopDefault(import('..\\pages\\login\\index.vue' /* webpackChunkName: "pages/login/index" */))
+const _7e1b5681 = () => interopDefault(import('..\\pages\\perfil\\index.vue' /* webpackChunkName: "pages/perfil/index" */))
 const _6e522919 = () => interopDefault(import('..\\pages\\project-details\\index.vue' /* webpackChunkName: "pages/project-details/index" */))
 const _47d3445f = () => interopDefault(import('..\\pages\\renta\\index.vue' /* webpackChunkName: "pages/renta/index" */))
 const _76f5277e = () => interopDefault(import('..\\pages\\works1\\index.vue' /* webpackChunkName: "pages/works1/index" */))
@@ -59,10 +59,6 @@ export const routerOptions = {
     component: _a44ed996,
     name: "home1"
   }, {
-    path: "/",
-    component: _198cd64c,
-    name: "home1-light"
-  }, {
     path: "/home2",
     component: _94eb8ed8,
     name: "home2"
@@ -83,6 +79,10 @@ export const routerOptions = {
     component: _784dd29e,
     name: "login"
   }, {
+    path: "/perfil",
+    component: _7e1b5681,
+    name: "perfil"
+  }, {
     path: "/project-details",
     component: _6e522919,
     name: "project-details"
@@ -102,13 +102,11 @@ export const routerOptions = {
     path: "/works3",
     component: _f34f1b88,
     name: "works3"
-  }, 
-  // {
-  //   path: "/",
-  //   component: _e5eb7366,
-  //   name: "index"
-  // }
-],
+  }, {
+    path: "/",
+    component: _e5eb7366,
+    name: "index"
+  }],
 
   fallback: false
 }

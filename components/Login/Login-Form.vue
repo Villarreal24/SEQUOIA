@@ -61,19 +61,22 @@ export default {
     }
   },
   methods: {
-
     email() {
       console.log("email");
     },
     async google() {
       const provider = await new this.$fireModule.auth.GoogleAuthProvider();
-
-      this.login(provider);
+      if (provider) {
+        this.login(provider);
+        this.$store.commit('setProvider','Google')
+      }
     },
     async facebook() {
       const provider = await new this.$fireModule.auth.FacebookAuthProvider();
-
-      this.login(provider);
+      if (provider) {
+        this.login(provider);
+        this.$store.commit('setProvider','Facebook')
+      }
     },
     // ==============================================
     //              INICIO DE SESION
@@ -83,7 +86,7 @@ export default {
         try {
             const result = await this.$fire.auth.signInWithPopup(provider);
             const user = result.user;
-
+            console.log(user);
             // Colleccion usuarios
             const usuario = {
                 uid: user.uid,

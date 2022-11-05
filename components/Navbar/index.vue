@@ -2,7 +2,7 @@
   <nav :ref="nr" class="navbar navbar-expand-lg">
     <div class="container">
       <!-- Logo -->
-      <NuxtLink to="/home1-light" class="logo">
+      <NuxtLink to="/" class="logo">
         <img ref="lr" src="/img/logo-light.png"  alt="logo" v-if="showLogo !== false" />
       </NuxtLink>
 
@@ -75,12 +75,8 @@
               Cuenta
             </span>
             <div class="dropdown-menu" >
-              <NuxtLink class="dropdown-item" to="/blog">Perfil</NuxtLink>
+              <NuxtLink class="dropdown-item" to="/perfil">Perfil</NuxtLink>
               <p class="dropdown-item" @click="logOut()">Cerrar sesion</p>
-              <!-- <NuxtLink class="dropdown-item" to="/blog-details"
-                @click="logOut()">  
-                  Cerrar sesión
-              </NuxtLink> -->
             </div>
           </li>
         </ul>
@@ -105,7 +101,7 @@ export default {
   },
   methods: {
     async logOut() {
-      await this.$fire.auth.signOut();
+      this.$store.commit('logOut');
     },
     handleDropdown: (e) => {
       getSiblings(e.target.parentElement).filter((item) => item.classList.contains("show")).map((item) => {

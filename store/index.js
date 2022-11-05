@@ -1,24 +1,32 @@
 export const state = () => ({
-    authUser: {}
+    authUser: {},
+    provider: ''
 })
 
 export const mutations = {
-    updateUser(state, payload) {
-        state.user = payload;
-        console.log(payload);
-        this.$router.push('/compra')
-    },
     RESET_STORE: (state) => {
         state.authUser = null
         // Object.assign(state, initialState())
     },
 
     SET_AUTH_USER: (state, authUser) => {
+        let provider = ''
+        authUser.providerData.forEach(element => {
+            provider = element.providerId
+        });
         state.authUser = {
             uid: authUser.uid,
             email: authUser.email,
-            name: authUser.displayName
+            name: authUser.displayName,
+            provider: provider
         }
+    },
+    logOut(state) {
+        this.$fire.auth.signOut();
+        state.authUser = ''
+    },
+    setProvider(state, payload) {
+        state.provider = payload
     }
 }
 

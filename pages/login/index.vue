@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <Navbar ref="navbar" theme="light" /> -->
     <LoginHeader />
   </div>
 </template>

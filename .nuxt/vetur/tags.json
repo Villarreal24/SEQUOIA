@@ -2,11 +2,11 @@
   "AboutAbout": {
     "description": "Auto imported from components/About-About/index.vue"
   },
-  "AboutHeader": {
-    "description": "Auto imported from components/About-Header/index.vue"
-  },
   "AboutSkills": {
     "description": "Auto imported from components/About-Skills/index.vue"
+  },
+  "AboutHeader": {
+    "description": "Auto imported from components/About-Header/index.vue"
   },
   "BlogsBlogs": {
     "description": "Auto imported from components/Blogs-Blogs/index.vue"
@@ -26,14 +26,14 @@
   "DemosHeader": {
     "description": "Auto imported from components/Demos-Header/index.vue"
   },
-  "Footer": {
-    "description": "Auto imported from components/Footer/index.vue"
+  "Header2": {
+    "description": "Auto imported from components/Header2/index.vue"
   },
   "DemosMasonery": {
     "description": "Auto imported from components/Demos-Masonery/index.vue"
   },
-  "Header2": {
-    "description": "Auto imported from components/Header2/index.vue"
+  "Footer": {
+    "description": "Auto imported from components/Footer/index.vue"
   },
   "Home1About": {
     "description": "Auto imported from components/Home1-About/index.vue"
@@ -44,11 +44,11 @@
   "Home1LightAbout": {
     "description": "Auto imported from components/Home1-Light-About/index.vue"
   },
-  "Home1LightHeader": {
-    "description": "Auto imported from components/Home1-Light-Header/index.vue"
-  },
   "Home1LightContact": {
     "description": "Auto imported from components/Home1-Light-Contact/index.vue"
+  },
+  "Home1LightHeader": {
+    "description": "Auto imported from components/Home1-Light-Header/index.vue"
   },
   "Home1LightNews": {
     "description": "Auto imported from components/Home1-Light-News/index.vue"
@@ -226,6 +226,24 @@
   },
   "Navbar": {
     "description": "Auto imported from components/Navbar/index.vue"
+  },
+  "PerfilConfigCapitalizar": {
+    "description": "Auto imported from components/Perfil-Config/Capitalizar.vue"
+  },
+  "PerfilConfigComprar": {
+    "description": "Auto imported from components/Perfil-Config/Comprar.vue"
+  },
+  "PerfilConfigCuenta": {
+    "description": "Auto imported from components/Perfil-Config/Cuenta.vue"
+  },
+  "PerfilConfig": {
+    "description": "Auto imported from components/Perfil-Config/index.vue"
+  },
+  "PerfilConfigVender": {
+    "description": "Auto imported from components/Perfil-Config/Vender.vue"
+  },
+  "PerfilHeader": {
+    "description": "Auto imported from components/Perfil-Header/index.vue"
   },
   "PostDetails": {
     "description": "Auto imported from components/Post-Details/index.vue"

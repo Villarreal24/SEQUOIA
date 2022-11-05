@@ -5,7 +5,7 @@
         <div class="bg-img valign" :style="`background-image:url('/img/slid/x1.jpg')`" :data-overlay-dark="7">
           <div class="container">
             <div class="login">
-              <NuxtLink class="logo" to="/home1-light">
+              <NuxtLink class="logo" to="/">
                 <img src="/img/logo-light.png" v-if="showLogo !== false" />
               </NuxtLink>
             </div>
