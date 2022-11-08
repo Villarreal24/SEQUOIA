@@ -95,9 +95,11 @@ export default {
             },
           },
           firestore: true,
+          storage: true,
         }
       }
     ],
+    ['@nuxtjs/axios'],
     ["vue-scrollto/nuxt", { duration: 1000 }],
     ['bootstrap-vue/nuxt', {
       icons: true

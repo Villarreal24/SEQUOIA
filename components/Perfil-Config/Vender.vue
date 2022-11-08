@@ -19,8 +19,33 @@
             </div>
         </div>
         <hr>
-        <div class="profile-group ">
-
+        <div class="profile-group">
+            <div class="row col-12 justify-content-between mb-3">
+                <h6>Escrituras</h6>
+                <b-button variant="info" v-show="true">Descargar</b-button>
+                <b-button variant="info" v-show="false">Adjuntar</b-button>
+            </div>
+            
+            <div class="row justify-content-between col-12">
+                <p>Revisa nuestros Términos y Condiciones, así como las Políticas de Privacidad.</p>
+                <p class="h2">
+                    <b-icon icon="check-lg" variant="success" aria-label="Help"></b-icon>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="profile-group">
+            <div class="row col-12 justify-content-between mb-3">
+                <h6>Libertad de Gravamen</h6>
+                <b-button variant="info" v-show="true">Descargar</b-button>
+                <b-button variant="info" v-show="false">Adjuntar</b-button>
+            </div>
+            <div class="row justify-content-between col-12">
+                <p>Revisa nuestros Términos y Condiciones, asi como las Políticas de Privacidad.</p>
+                <p class="h2">
+                    <b-icon icon="check-lg" variant="success" aria-label="Help"></b-icon>
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -31,7 +56,7 @@ export default {
     data() {
         return {
             status: 'Comprobado',
-            diasRestantes: 32
+            diasRestantes: 54
         }
     }
 }

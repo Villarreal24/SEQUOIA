@@ -16,6 +16,7 @@ import { createStore } from './store.js'
 import nuxt_plugin_plugin_539879dc from 'nuxt_plugin_plugin_539879dc' // Source: .\\components\\plugin.js (mode: 'all')
 import nuxt_plugin_bootstrapvue_ddc8c938 from 'nuxt_plugin_bootstrapvue_ddc8c938' // Source: .\\bootstrap-vue.js (mode: 'all')
 import nuxt_plugin_vuescrollto_28a94e34 from 'nuxt_plugin_vuescrollto_28a94e34' // Source: .\\vue-scrollto.js (mode: 'client')
+import nuxt_plugin_axios_2439c235 from 'nuxt_plugin_axios_2439c235' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_index_59a9a426 from 'nuxt_plugin_index_59a9a426' // Source: .\\firebase\\index.js (mode: 'all')
 import nuxt_plugin_serviceauthinitialize_0e08bf0a from 'nuxt_plugin_serviceauthinitialize_0e08bf0a' // Source: .\\firebase\\service.auth.initialize.js (mode: 'all')
 import nuxt_plugin_vueAwesomeSwiper_282933cc from 'nuxt_plugin_vueAwesomeSwiper_282933cc' // Source: ..\\plugins\\vueAwesomeSwiper.js (mode: 'all')
@@ -230,6 +231,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_vuescrollto_28a94e34 === 'function') {
     await nuxt_plugin_vuescrollto_28a94e34(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_axios_2439c235 === 'function') {
+    await nuxt_plugin_axios_2439c235(app.context, inject)
   }
 
   if (typeof nuxt_plugin_index_59a9a426 === 'function') {

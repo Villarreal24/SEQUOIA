@@ -1014,18 +1014,18 @@ body {
   margin-bottom: 3em;
 }
 .profile-content {
-  height: 500px;
+  height: 1040px;
 }
 .profile-group {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-/* .profile-subtitle p {
-  color: #020202;
+.profile-text-terminos {
+  font-size: 12px;
 }
-.profile-text text p {
-
-} */
+.text-terminos-negrita {
+  font-weight: 700;
+}
 /* ====================== [ End Profile ] ====================== */
 /* ====================== [ Start Heading ] ====================== */
 .section-head {

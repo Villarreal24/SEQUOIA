@@ -1,7 +1,82 @@
 <template>
     <div class="container profile-content">
         <div class="profile-group">
-            <h6>Capitalizar</h6>
+            <h5>Venta con Arrendamiento Posterior SEQUOIA</h5>
+        </div>
+
+        <div class="profile-group">
+            <div class="row col-12 justify-content-between">
+                <div class="col-md-10">
+                    <h6 class="mb-3">Número de Hectáreas</h6>
+                    <h6 class="col pb-2">¿Cuál es el tamaño total del Inmueble?</h6>
+                    <b-col sm="8">
+                        <b-form-input id="input-none" :state="null" placeholder="Ingresa el tamaño">
+                        </b-form-input>
+                    </b-col>
+                </div>
+
+                <div class="col-md-2 justify-content-end">
+                    <b-button variant="info" v-show="true">Descargar</b-button>
+                    <b-button variant="info" v-show="false">Adjuntar</b-button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="profile-group">
+            <div class="row col-12 justify-content-between">
+                <div class="col-12 col-md-10">
+                    <h6 class="mb-3">Hectáreas Cultivables</h6>
+                    <h6 class="col pb-2">¿Cuántas hectáreas del total son cultivables?</h6>
+                    <b-col sm="8">
+                        <b-form-input id="input-none" :state="null" placeholder="Ingresa hectáreas">
+                        </b-form-input>
+                    </b-col>
+                </div>
+
+                <div class="col-12 col-md-2 justify-content-end">
+                    <b-button variant="info" v-show="true">Descargar</b-button>
+                    <b-button variant="info" v-show="false">Adjuntar</b-button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="profile-group">
+            <div class="row">
+                <div class="row col-12 col-lg-9">
+                    <b-col sm="4">
+                        <h6 class="mb-3">Municipio</h6>
+                        <b-form-input id="input-none" :state="null">
+                        </b-form-input>
+                    </b-col>
+                    <b-col sm="4">
+                        <h6 class="mb-3">Estado</h6>
+                        <b-form-input id="input-none" :state="null">
+                        </b-form-input>
+                    </b-col>
+                    <b-col sm="4">
+                        <h6 class="mb-3">Coordenadas</h6>
+                        <b-form-input id="input-none" :state="null">
+                        </b-form-input>
+                    </b-col>
+                    <b-col class="pt-45" sm="9">
+                        <h6>Veamos si tu propiedad califica para nuestro programa de Venta
+                            con arrendamiento posterio.</h6>
+                    </b-col>
+                    <b-col class="pt-45" sm="3">
+                        <b-button variant="info">Califíquenme!</b-button>
+                    </b-col>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <p class="profile-text-terminos pb-3">
+                            Al hacer click en "Califíquenmme", acepta nuestros
+                            <span class="text-terminos-negrita">Términos y Condiciones de servicio
+                                y Política de privacidad.</span>
+                        </p>
+                        <p class="profile-text-terminos">
+                            Programa actualmente disponible en Sonora y Jalisco.
+                        </p>
+                </div>
+            </div>
         </div>
     </div>
 </template>
