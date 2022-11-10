@@ -53,7 +53,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    // "~/plugins/firebase.js",
+    // "~/plugins/vee-validate.js",
     "~/plugins/vueAwesomeSwiper.js",
     "~/plugins/vueSlickCarousel.js",
     "~/plugins/vueVimeoPlayer.js",
@@ -106,45 +106,9 @@ export default {
     }]
   ],
 
-  // firebase: {
-  //   config: {
-  //     apiKey: "AIzaSyADFHq2e7t4AslCTeAcKSHW7J4EkpklHcg",
-  //     authDomain: "sequoia-1214c.firebaseapp.com",
-  //     projectId: "sequoia-1214c",
-  //     storageBucket: "sequoia-1214c.appspot.com",
-  //     messagingSenderId: "1079430348294",
-  //     appId: "1:1079430348294:web:4af5e60a6e78bff1310d87",
-  //     measurementId: "G-EE6RQPRB4C"
-  //   },
-  //   services: {
-  //     auth: {
-  //       persistence: 'local',
-  //       initialize: {
-  //         onAuthStateChangedAction: 'onAuthStateChanged',
-  //       },
-  //       ssr: true,
-  //     },
-  //     firestore: true,
-  //     storage: true,
-  //     increment: true,
-  //   }
-  // },
-
-  // // Auth
-  // auth: {
-  //   persistence: 'local', // default
-  //   initialize: {
-  //     onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
-  //     onAuthStateChangedAction: 'onAuthStateChangedAction',
-  //     subscribeManually: false
-  //   },
-  //   ssr: false, // default
-  //   emulatorPort: 3000,
-  //   emulatorHost: 'http://localhost:3000',
-  // },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ['vee-validate/dist/rules'],
     extractCSS: true,
     splitChunks: {
       layouts: true

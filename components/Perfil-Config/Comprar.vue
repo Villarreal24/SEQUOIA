@@ -10,11 +10,11 @@
                     <h6>Carta de intención</h6>
                 </b-col>
                 <b-col sm="2">
-                    <b-button variant="info" v-show="existFile" @click="downloadFile">Descargar</b-button>
+                    <b-button variant="info" v-if="existFile" @click="downloadFile">Ver y Descargar</b-button>
                     <b-button
+                        v-if="!existFile"
                         :disabled="!send"
                         variant="info"
-                        v-show="!existFile"
                         @click="uploadFile"
                     >Guardar archivo</b-button>
                 </b-col>
@@ -22,7 +22,7 @@
                     <p>Válida por 60 días naturales a partir de la validación de documento.</p>
                 </b-col>
                 
-                <div class="col-12 mt-4" v-show="!existFile">
+                <div class="col-12 mt-4" v-if="!existFile">
                     <b-form-file
                         v-model="file"
                         :state="Boolean(file)"
@@ -42,17 +42,17 @@
                     <h6>Estatus de la carta</h6>
                 </b-col>
                 <b-col sm="1">
-                    <p class="h2" v-show="existFile">
+                    <p class="h2" v-if="existFile">
                         <b-icon icon="check-lg" variant="success" aria-label="Help"></b-icon>
                     </p>
-                    <p class="h2" v-show="!existFile">
+                    <p class="h2" v-if="!existFile">
                         <b-icon icon="x-circle-fill" variant="danger" aria-label="Help"></b-icon>
                     </p>
                 </b-col>
             </div>
             <b-col>
                 <p>Dias restantes de la carta de intención:
-                    <span v-show="diasRestantes" style="color: #252531;">{{ diasRestantes }}</span>
+                    <span v-if="daysLeft" style="color: #252531;">{{ daysLeft }}</span>
                 </p>
             </b-col>
         </div>
@@ -62,14 +62,13 @@
 <script>
 import { saveAs } from 'file-saver';
 var FileSaver = require('file-saver');
+
 export default {
     name: "Perfil-Config-Comprar",
     data() {
         return {
-            status: 'Comprobado',
-            diasRestantes: 32,
             file: '',
-            diasRestantes: null,
+            daysLeft: '',
             existFile: false,
             send: false
         }
@@ -85,7 +84,7 @@ export default {
                     this.existFile = true;
                     const data = snap.data();
                     this.file = data.carta;
-                    this.diasRestantes = data.dias;
+                    this.daysLeft = data.dias;
                 }
             })
         },
@@ -98,7 +97,6 @@ export default {
         },
         async uploadFile() {
             const user = this.$store.state.authUser.uid;
-            console.log(user)
             const refFirestore = this.$fire.firestore.collection('users').doc(user)
                 .collection('compra').doc('cartaIntencion')
             const refStorage = await this.$fire.storage.ref().child('users')
@@ -111,7 +109,7 @@ export default {
             }).then(() => {
                 this.send = false
                 this.existFile = true
-                this.diasRestantes = 60
+                this.daysLeft = 60
             })
         },
         downloadFile() {
