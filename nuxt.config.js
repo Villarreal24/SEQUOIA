@@ -53,7 +53,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    // "~/plugins/vee-validate.js",
     "~/plugins/vueAwesomeSwiper.js",
     "~/plugins/vueSlickCarousel.js",
     "~/plugins/vueVimeoPlayer.js",
