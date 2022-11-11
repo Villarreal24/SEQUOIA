@@ -7,148 +7,154 @@
         <!-- =====================================
                     CARTA DE INTENCION
         ===================================== -->
-        <div class="profile-group">
-            <div class="row col-12 justify-content-between">
-                <b-col sm="8">
-                    <h6>Carta de intención</h6>
-                </b-col>
-                <b-col sm="2">
-                    <b-button
-                        variant="info"
-                        v-if="existFileIntentionLetter"
-                        @click="downloadFile(fileIntentionLetter)"
-                        >Ver y descargar
-                    </b-button>
-                    <b-button
-                        :disabled="!sendIntention"
-                        variant="info"
-                        v-if="!existFileIntentionLetter"
-                        @click="uploadFileIntentionLetter"
-                    >Guardar archivo</b-button>
-                </b-col>
-            </div>
+        <b-overlay :show="loadingIntention" rounded="sm">
+            <div class="profile-group">
+                <div class="row col-12 justify-content-between">
+                    <b-col sm="8">
+                        <h6>Carta de intención</h6>
+                    </b-col>
+                    <b-col sm="2">
+                        <b-button
+                            variant="info"
+                            v-if="existFileIntentionLetter"
+                            @click="downloadFile(fileIntentionLetter)"
+                            >Ver y descargar
+                        </b-button>
+                        <b-button
+                            :disabled="!sendIntention"
+                            variant="info"
+                            v-if="!existFileIntentionLetter"
+                            @click="uploadFileIntentionLetter"
+                        >Guardar archivo</b-button>
+                    </b-col>
+                </div>
 
-            <b-col md="12">
-                <p>Válida por 90 días naturales a partir de la validación de documento.</p>
-            </b-col>
-
-            <div class="col-12 col-lg-10 mt-4" v-if="!existFileIntentionLetter">
-                <b-form-file
-                    v-model="fileIntentionLetter"
-                    :state="Boolean(fileIntentionLetter)"
-                    accept=".pdf"
-                    placeholder="Escoge el archivo o sueltalo aquí..."
-                    drop-placeholder="Suelta el archivo aquí..."
-                    @change="onChangeFileIntentionLetter">
-                </b-form-file>
-            </div>
-
-            <div class="row justify-content-between col-12" v-if="existFileIntentionLetter">
-                <b-col sm="8">
-                    <p class="mt-1">Dias restantes de la carta de intención: 
-                        <span style="color: #252531;">{{ diasRestantesIntencion }}</span>
-                    </p>
+                <b-col md="12">
+                    <p>Válida por 90 días naturales a partir de la validación de documento.</p>
                 </b-col>
-                <b-col sm="1">
-                    <p class="h2">
-                        <b-icon icon="check-lg" variant="success" aria-label="Help"></b-icon>
-                    </p>
-                </b-col>
+
+                <div class="col-12 col-lg-10 mt-4" v-if="!existFileIntentionLetter">
+                    <b-form-file
+                        v-model="fileIntentionLetter"
+                        :state="Boolean(fileIntentionLetter)"
+                        accept=".pdf"
+                        placeholder="Escoge el archivo o sueltalo aquí..."
+                        drop-placeholder="Suelta el archivo aquí..."
+                        @change="onChangeFileIntentionLetter">
+                    </b-form-file>
+                </div>
+
+                <div class="row justify-content-between col-12" v-if="existFileIntentionLetter">
+                    <b-col sm="8">
+                        <p class="mt-1">Dias restantes de la carta de intención: 
+                            <span style="color: #252531;">{{ diasRestantesIntencion }}</span>
+                        </p>
+                    </b-col>
+                    <b-col sm="1">
+                        <p class="h2">
+                            <b-icon icon="check-lg" variant="success" aria-label="Help"></b-icon>
+                        </p>
+                    </b-col>
+                </div>
             </div>
-        </div>
+        </b-overlay>
         <hr>
         <!-- =====================================
                         ESCRITURAS
         ===================================== -->
-        <div class="profile-group">
-            <div class="row col-12 justify-content-between mb-3">
-                <b-col sm="8">
-                    <h6>Escrituras</h6>
-                </b-col>
-                <b-col sm="2">
-                    <b-button
-                        variant="info"
-                        v-if="existFileScriptures"
-                        @click="downloadFile(fileScriptures)"
-                        >Ver y descargar
-                    </b-button>
-                    <b-button
-                        :disabled="!sendScriptures"
-                        variant="info"
-                        v-if="!existFileScriptures"
-                        @click="uploadFileScriptures"
-                    >Guardar archivo</b-button>
-                </b-col>
-            </div>
+        <b-overlay :show="loadingScriptures" rounded="sm">
+            <div class="profile-group">
+                <div class="row col-12 justify-content-between mb-3">
+                    <b-col sm="8">
+                        <h6>Escrituras</h6>
+                    </b-col>
+                    <b-col sm="2">
+                        <b-button
+                            variant="info"
+                            v-if="existFileScriptures"
+                            @click="downloadFile(fileScriptures)"
+                            >Ver y descargar
+                        </b-button>
+                        <b-button
+                            :disabled="!sendScriptures"
+                            variant="info"
+                            v-if="!existFileScriptures"
+                            @click="uploadFileScriptures"
+                        >Guardar archivo</b-button>
+                    </b-col>
+                </div>
 
-            <div class="row justify-content-between col-12">
-                <b-col sm="8">
-                    <p>Revisa nuestros Términos y Condiciones, así como las Políticas de Privacidad.</p>
-                </b-col>
-                <b-col sm="1">
-                    <p class="h2" v-if="existFileScriptures">
-                        <b-icon icon="check-lg" variant="success" aria-label="Help"></b-icon>
-                    </p>
-                </b-col>
-            </div>
+                <div class="row justify-content-between col-12">
+                    <b-col sm="8">
+                        <p>Revisa nuestros Términos y Condiciones, así como las Políticas de Privacidad.</p>
+                    </b-col>
+                    <b-col sm="1">
+                        <p class="h2" v-if="existFileScriptures">
+                            <b-icon icon="check-lg" variant="success" aria-label="Help"></b-icon>
+                        </p>
+                    </b-col>
+                </div>
 
-            <div class="col-12 col-lg-10 mt-4" v-if="!existFileScriptures">
-                <b-form-file
-                    v-model="fileScriptures"
-                    :state="Boolean(fileScriptures)"
-                    accept=".pdf"
-                    placeholder="Escoge el archivo o sueltalo aquí..."
-                    drop-placeholder="Suelta el archivo aquí..."
-                    @change="onChangeFileScriptures">
-                </b-form-file>
+                <div class="col-12 col-lg-10 mt-4" v-if="!existFileScriptures">
+                    <b-form-file
+                        v-model="fileScriptures"
+                        :state="Boolean(fileScriptures)"
+                        accept=".pdf"
+                        placeholder="Escoge el archivo o sueltalo aquí..."
+                        drop-placeholder="Suelta el archivo aquí..."
+                        @change="onChangeFileScriptures">
+                    </b-form-file>
+                </div>
             </div>
-        </div>
+        </b-overlay>
         <hr>
         <!-- =====================================
                     LIBERTAD DE GRAVAMEN
         ===================================== -->
-        <div class="profile-group">
-            <div class="row col-12 justify-content-between mb-3">
-                <b-col sm="8">
-                    <h6>Libertad de Gravamen</h6>
-                </b-col>
-                <b-col sm=2>
-                    <b-button 
-                        variant="info"
-                        v-if="existFileAssessment"
-                        @click="downloadFile(fileAssessment)"
-                        >Ver y descargar
-                    </b-button>
-                    <b-button
-                        v-if="!existFileAssessment"
-                        :disabled="!sendAssessment"
-                        variant="info"
-                        @click="uploadFileAssessment"
-                    >Guardar archivo</b-button>
-                </b-col>
-            </div>
-            <div class="row justify-content-between col-12">
-                <b-col sm="8">
-                    <p>Revisa nuestros Términos y Condiciones, asi como las Políticas de Privacidad.</p>
-                </b-col>
-                <b-col sm="1">
-                    <p class="h2" v-if="existFileAssessment">
-                        <b-icon icon="check-lg" variant="success" aria-label="Help"></b-icon>
-                    </p>
-                </b-col>
-            </div>
+        <b-overlay :show="loadingAssessment" rounded="sm">
+            <div class="profile-group">
+                <div class="row col-12 justify-content-between mb-3">
+                    <b-col sm="8">
+                        <h6>Libertad de Gravamen</h6>
+                    </b-col>
+                    <b-col sm=2>
+                        <b-button 
+                            variant="info"
+                            v-if="existFileAssessment"
+                            @click="downloadFile(fileAssessment)"
+                            >Ver y descargar
+                        </b-button>
+                        <b-button
+                            v-if="!existFileAssessment"
+                            :disabled="!sendAssessment"
+                            variant="info"
+                            @click="uploadFileAssessment"
+                        >Guardar archivo</b-button>
+                    </b-col>
+                </div>
+                <div class="row justify-content-between col-12">
+                    <b-col sm="8">
+                        <p>Revisa nuestros Términos y Condiciones, asi como las Políticas de Privacidad.</p>
+                    </b-col>
+                    <b-col sm="1">
+                        <p class="h2" v-if="existFileAssessment">
+                            <b-icon icon="check-lg" variant="success" aria-label="Help"></b-icon>
+                        </p>
+                    </b-col>
+                </div>
 
-            <div class="col-12 col-lg-10 mt-4" v-if="!existFileAssessment">
-                <b-form-file
-                    v-model="fileAssessment"
-                    :state="Boolean(fileAssessment)"
-                    accept=".pdf"
-                    placeholder="Escoge el archivo o sueltalo aquí..."
-                    drop-placeholder="Suelta el archivo aquí..."
-                    @change="onChangeFileAssessment">
-                </b-form-file>
+                <div class="col-12 col-lg-10 mt-4" v-if="!existFileAssessment">
+                    <b-form-file
+                        v-model="fileAssessment"
+                        :state="Boolean(fileAssessment)"
+                        accept=".pdf"
+                        placeholder="Escoge el archivo o sueltalo aquí..."
+                        drop-placeholder="Suelta el archivo aquí..."
+                        @change="onChangeFileAssessment">
+                    </b-form-file>
+                </div>
             </div>
-        </div>
+        </b-overlay>
     </div>
 </template>
 
@@ -160,6 +166,9 @@ export default {
     name: "Perfil-Config-Vender",
     data() {
         return {
+            loadingAssessment: false,
+            loadingScriptures: false,
+            loadingIntention: false,
             fileIntentionLetter: '',
             fileScriptures: '',
             fileAssessment: '',

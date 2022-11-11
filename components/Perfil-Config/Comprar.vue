@@ -4,37 +4,38 @@
             <h5>Políticas para comprar con SEQUOIA</h5>
         </div>
 
-        <div class="profile-group">
-            <div class="row col-12 justify-content-between">
-                <b-col sm="8">
-                    <h6>Carta de intención</h6>
-                </b-col>
-                <b-col sm="2">
-                    <b-button variant="info" v-if="existFile" @click="downloadFile">Ver y Descargar</b-button>
-                    <b-button
-                        v-if="!existFile"
-                        :disabled="!send"
-                        variant="info"
-                        @click="uploadFile"
-                    >Guardar archivo</b-button>
-                </b-col>
-                <b-col md="12">
-                    <p>Válida por 60 días naturales a partir de la validación de documento.</p>
-                </b-col>
-                
-                <div class="col-12 mt-4" v-if="!existFile">
-                    <b-form-file
-                        v-model="file"
-                        :state="Boolean(file)"
-                        accept=".pdf"
-                        placeholder="Escoge el archivo o sueltalo aquí..."
-                        drop-placeholder="Suelta el archivo aquí..."
-                        @change="onChangeFile">
-                    </b-form-file>
+        <b-overlay :show="loading" rounded="sm">
+            <div class="profile-group">
+                <div class="row col-12 justify-content-between">
+                    <b-col sm="8">
+                        <h6>Carta de intención</h6>
+                    </b-col>
+                    <b-col sm="2">
+                        <b-button variant="info" v-if="existFile" @click="downloadFile">Ver y Descargar</b-button>
+                        <b-button
+                            v-if="!existFile"
+                            :disabled="!send"
+                            variant="info"
+                            @click="uploadFile"
+                        >Guardar archivo</b-button>
+                    </b-col>
+                    <b-col md="12">
+                        <p>Válida por 60 días naturales a partir de la validación de documento.</p>
+                    </b-col>
+                    
+                    <div class="col-12 mt-4" v-if="!existFile">
+                        <b-form-file
+                            v-model="file"
+                            :state="Boolean(file)"
+                            accept=".pdf"
+                            placeholder="Escoge el archivo o sueltalo aquí..."
+                            drop-placeholder="Suelta el archivo aquí..."
+                            @change="onChangeFile">
+                        </b-form-file>
+                    </div>
                 </div>
             </div>
-            
-        </div>
+        </b-overlay>
         <hr>
         <div class="profile-group ">
             <div class="row justify-content-between col-12">
@@ -67,6 +68,7 @@ export default {
     name: "Perfil-Config-Comprar",
     data() {
         return {
+            loading: false,
             file: '',
             daysLeft: '',
             existFile: false,
@@ -113,7 +115,6 @@ export default {
             })
         },
         downloadFile() {
-            // window.open(this.file, 'Carta intencion.pdf')
             FileSaver.saveAs(this.file, "Carta intencion.pdf");
         },
     },

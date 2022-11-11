@@ -5,6 +5,7 @@
         </div>
 
         <!-- <ValidationObserver> -->
+        <b-overlay :show="loading" rounded="sm">
             <form @submit.prevent="onSubmit">
                 <div class="profile-group">
                     <div class="row col-12 justify-content-between">
@@ -91,7 +92,10 @@
                                     con arrendamiento posterio.</h6>
                             </b-col>
                             <b-col class="pt-45" sm="3">
-                                <b-button type="submit" variant="info">Califíquenme!</b-button>
+                                <b-button
+                                    type="submit"
+                                    variant="info">Califíquenme!
+                                </b-button>
                             </b-col>
                         </div>
                         <div class="col-12 col-lg-3">
@@ -107,6 +111,7 @@
                     </div>
                 </div>
             </form>
+        </b-overlay>
         <!-- </ValidationObserver> -->
     </div>
 </template>
@@ -121,6 +126,7 @@ export default {
     },
     data() {
         return {
+            loading: false,
             form: {
                 sizeProperty: '',
                 sizeArable: '',
@@ -131,9 +137,27 @@ export default {
         }
     },
     methods: {
-        onSubmit() {
-            const user = this.$store.state.authUser;
-            console.log(user)
+        async onSubmit() {
+            this.loading = true
+            const user = this.$store.state.authUser.uid;
+
+            const ref = this.$fire.firestore.collection('users').doc(user)
+                .collection('capitalizar').doc('arrendamiento')
+
+            await ref.set({
+                tamañoPropiedad: this.form.sizeProperty,
+                hectareasCultivables: this.form.sizeArable,
+                municipio: this.form.municipality,
+                estado: this.form.state,
+                coordenadas: this.form.coordinate
+            }).then(() => {
+                this.loading = false
+                let object = this.form
+                Object.keys(object).forEach(function (key) {
+                    object[key] = ''
+                })
+                this.form = object
+            })
         },
     }
 }

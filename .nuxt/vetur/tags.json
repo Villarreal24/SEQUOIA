@@ -1,15 +1,27 @@
 {
+  "BlogsBlogs": {
+    "description": "Auto imported from components/Blogs-Blogs/index.vue"
+  },
+  "AboutSkills": {
+    "description": "Auto imported from components/About-Skills/index.vue"
+  },
   "AboutAbout": {
     "description": "Auto imported from components/About-About/index.vue"
   },
   "AboutHeader": {
     "description": "Auto imported from components/About-Header/index.vue"
   },
-  "AboutSkills": {
-    "description": "Auto imported from components/About-Skills/index.vue"
+  "Footer": {
+    "description": "Auto imported from components/Footer/index.vue"
   },
-  "BlogsBlogs": {
-    "description": "Auto imported from components/Blogs-Blogs/index.vue"
+  "DemosMasonery": {
+    "description": "Auto imported from components/Demos-Masonery/index.vue"
+  },
+  "Header2": {
+    "description": "Auto imported from components/Header2/index.vue"
+  },
+  "DemosHeader": {
+    "description": "Auto imported from components/Demos-Header/index.vue"
   },
   "ContactForm": {
     "description": "Auto imported from components/Contact-Sections/Contact-Form.vue"
@@ -23,18 +35,6 @@
   "ContactSections": {
     "description": "Auto imported from components/Contact-Sections/index.vue"
   },
-  "DemosHeader": {
-    "description": "Auto imported from components/Demos-Header/index.vue"
-  },
-  "DemosMasonery": {
-    "description": "Auto imported from components/Demos-Masonery/index.vue"
-  },
-  "Footer": {
-    "description": "Auto imported from components/Footer/index.vue"
-  },
-  "Header2": {
-    "description": "Auto imported from components/Header2/index.vue"
-  },
   "Home1About": {
     "description": "Auto imported from components/Home1-About/index.vue"
   },
@@ -44,11 +44,11 @@
   "Home1LightAbout": {
     "description": "Auto imported from components/Home1-Light-About/index.vue"
   },
-  "Home1LightContact": {
-    "description": "Auto imported from components/Home1-Light-Contact/index.vue"
-  },
   "Home1LightHeader": {
     "description": "Auto imported from components/Home1-Light-Header/index.vue"
+  },
+  "Home1LightContact": {
+    "description": "Auto imported from components/Home1-Light-Contact/index.vue"
   },
   "Home1LightNews": {
     "description": "Auto imported from components/Home1-Light-News/index.vue"
@@ -146,11 +146,11 @@
   "Home3LightHeader": {
     "description": "Auto imported from components/Home3-Light-Header/index.vue"
   },
-  "Home3LightServices": {
-    "description": "Auto imported from components/Home3-Light-Services/index.vue"
-  },
   "Home3LightNumbers": {
     "description": "Auto imported from components/Home3-Light-Numbers/index.vue"
+  },
+  "Home3LightServices": {
+    "description": "Auto imported from components/Home3-Light-Services/index.vue"
   },
   "Home3LightSlider": {
     "description": "Auto imported from components/Home3-Light-Slider/index.vue"
@@ -209,14 +209,14 @@
   "Home4Works": {
     "description": "Auto imported from components/Home4-Works/index.vue"
   },
-  "Loading": {
-    "description": "Auto imported from components/Loading/index.vue"
-  },
   "LoginHeader": {
     "description": "Auto imported from components/Login/Header.vue"
   },
   "LoginForm": {
     "description": "Auto imported from components/Login/Login-Form.vue"
+  },
+  "Loading": {
+    "description": "Auto imported from components/Loading/index.vue"
   },
   "ModalVideo": {
     "description": "Auto imported from components/Modal-video/index.vue"
