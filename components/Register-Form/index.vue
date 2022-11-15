@@ -44,14 +44,18 @@
                         </b-form-input>
                     </b-form-group>
                 </ValidationProvider>
-                    <div class="mt-4">
-                        <b-button
-                            block
-                            type="submit"
-                            variant="success"
-                            >Crear cuenta
-                        </b-button>
-                    </div>
+                <!-- =========== SHOW ERROR ============= -->
+                <div class="messages" v-if="errMessage">
+                    <p class="text-danger">{{ errMessage }}</p>
+                </div>
+                <div class="mt-4">
+                    <b-button
+                        block
+                        type="submit"
+                        variant="success"
+                        >Crear cuenta
+                    </b-button>
+                </div>
                 </div>
             </b-form>
         </div>
@@ -73,15 +77,19 @@ export default {
         email: '',
         password: '',
       },
-      error: ''
+      errMessage: ''
     }
   },
   methods: {
     register() {
         const email = this.form.email
         const password = this.form.password
+        const name = this.form.name
         this.$fire.auth.createUserWithEmailAndPassword(email, password)
             .then(async userCredential => {
+                await this.$fire.auth.currentUser.updateProfile({
+                    displayName: name
+                })
                 const userUid = userCredential.user.uid
                 await this.$fire.firestore.collection('users').doc(userUid)
                     .set({
@@ -93,6 +101,12 @@ export default {
                         console.log(err)
                         console.log("Algo salio mal")
                     })
+            })
+            .catch(err => {
+                this.errMessage = err.message
+                if(err.message === 'Firebase: The email address is already in use by another account. (auth/email-already-in-use).') {
+                    this.errMessage = "Este correo electrónico ya se encuentra registrado."
+                }
             })
     }
   }

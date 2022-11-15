@@ -29,23 +29,23 @@
   "Header2": {
     "description": "Auto imported from components/Header2/index.vue"
   },
-  "Footer": {
-    "description": "Auto imported from components/Footer/index.vue"
-  },
   "DemosMasonery": {
     "description": "Auto imported from components/Demos-Masonery/index.vue"
   },
-  "Home1About": {
-    "description": "Auto imported from components/Home1-About/index.vue"
-  },
-  "Home1Header": {
-    "description": "Auto imported from components/Home1-Header/index.vue"
+  "Footer": {
+    "description": "Auto imported from components/Footer/index.vue"
   },
   "Home1LightAbout": {
     "description": "Auto imported from components/Home1-Light-About/index.vue"
   },
+  "Home1About": {
+    "description": "Auto imported from components/Home1-About/index.vue"
+  },
   "Home1LightContact": {
     "description": "Auto imported from components/Home1-Light-Contact/index.vue"
+  },
+  "Home1Header": {
+    "description": "Auto imported from components/Home1-Header/index.vue"
   },
   "Home1LightHeader": {
     "description": "Auto imported from components/Home1-Light-Header/index.vue"

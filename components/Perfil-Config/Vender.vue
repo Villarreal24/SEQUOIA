@@ -153,6 +153,10 @@
                         @change="onChangeFileAssessment">
                     </b-form-file>
                 </div>
+
+                <b-col class="pt-3 mb-0" md="12" v-if="!sendAssessment && !existFileAssessment">
+                    <b-alert show variant="warning">Solo se pueden subir documentos .pdf</b-alert>
+                </b-col>
             </div>
         </b-overlay>
     </div>

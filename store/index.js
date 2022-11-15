@@ -10,8 +10,13 @@ export const mutations = {
 
     SET_AUTH_USER: (state, authUser) => {
         let provider = ''
+        console.log(authUser)
         authUser.providerData.forEach(element => {
-            provider = element.providerId
+            if (element.providerId === 'password') {
+                provider = 'Correo electrónico'
+            } else {
+                provider = element.providerId
+            }
         });
         state.authUser = {
             uid: authUser.uid,
@@ -65,11 +70,9 @@ export const actions = {
 
     onAuthStateChanged({ commit }, { authUser, claims }) {
         if (!authUser) {
-            console.log("No hay usuario");
             commit('RESET_STORE')
             return
         }
-        // console.log('AuthStateChangedAction', authUser)
         commit('SET_AUTH_USER', authUser)
     },
 }

@@ -113,7 +113,6 @@ export default {
             this.$nuxt.$options.router.push("/")
           }
         }).catch(err => {
-          console.log(err.message)
           if (err.message === 'Firebase: There is no user record corresponding to this identifier. The user may have been deleted. (auth/user-not-found).') {
             this.errMessage = "Usuario o contraseña invalidos."
           } else if (err.message === 'Firebase: The password is invalid or the user does not have a password. (auth/wrong-password).') {
@@ -145,7 +144,6 @@ export default {
       try {
         const result = await this.$fire.auth.signInWithPopup(provider);
         const user = result.user;
-        console.log(user);
         // Colleccion usuarios
         const usuario = {
           uid: user.uid,
@@ -166,36 +164,7 @@ export default {
         }
 
       }
-    },
-    // onSubmit(e) {
-    //   e.preventDefault();
-
-    //   const data = {
-    //     email: this.email,
-    //     password: this.password
-    //   }
-
-    //   if (!this.validateForm(data)) return;
-
-    //   console.log(data);
-
-    //   this.errMessage = '';
-    // },
-    // validateForm(contactData) {
-    //   if (!contactData.password || !contactData.email) {
-    //     this.errMessage = 'Please fill in all fields';
-    //     return false;
-    //   }
-    //   if (contactData.password.length < 5) {
-    //     this.errMessage = 'Name must be at least 5 characters';
-    //     return false;
-    //   }
-    //   if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(contactData.email)) {
-    //     this.errMessage = 'Email address is invalid';
-    //     return false;
-    //   }
-    //   return true;
-    // }
+    }
   }
 }
 </script>

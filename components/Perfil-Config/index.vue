@@ -4,7 +4,7 @@
             <h2>Configuración de la cuenta</h2>
         </div>
         <div>
-            <b-tabs content-class="mt-3" fill>
+            <b-tabs fill>
                 <b-tab title="Cuenta" active>
                     <Perfil-Config-Cuenta />
                 </b-tab>

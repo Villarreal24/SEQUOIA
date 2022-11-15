@@ -102,6 +102,7 @@ export default {
   methods: {
     async logOut() {
       this.$store.commit('logOut');
+      this.$nuxt.$options.router.push("/")
     },
     handleDropdown: (e) => {
       getSiblings(e.target.parentElement).filter((item) => item.classList.contains("show")).map((item) => {
