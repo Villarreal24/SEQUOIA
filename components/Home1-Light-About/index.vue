@@ -42,7 +42,6 @@
 
 <script>
 import Home1LightAboutData from "../../data/home1-light-about.json";
-import { db } from "~/plugins/firebase.js";
 
 export default {
   name: "Home1-Light-About",

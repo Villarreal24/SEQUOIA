@@ -3,108 +3,133 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\about\\\\index.vue",
-    "chunkName": "pages/about/index"
+    "chunkName": "pages/about/index",
+    "_name": "_bbbd400c"
   },
   {
     "name": "blog",
     "path": "/blog",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\blog\\\\index.vue",
-    "chunkName": "pages/blog/index"
+    "chunkName": "pages/blog/index",
+    "_name": "_660ee8aa"
   },
   {
     "name": "blog-details",
     "path": "/blog-details",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\blog-details\\\\index.vue",
-    "chunkName": "pages/blog-details/index"
+    "chunkName": "pages/blog-details/index",
+    "_name": "_b5f04bd4"
   },
   {
     "name": "compra",
     "path": "/compra",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\compra\\\\index.vue",
-    "chunkName": "pages/compra/index"
+    "chunkName": "pages/compra/index",
+    "_name": "_5487a78f"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\contact\\\\index.vue",
-    "chunkName": "pages/contact/index"
+    "chunkName": "pages/contact/index",
+    "_name": "_e88acb72"
   },
   {
     "name": "home1",
     "path": "/home1",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\home1\\\\index.vue",
-    "chunkName": "pages/home1/index"
+    "chunkName": "pages/home1/index",
+    "_name": "_a44ed996"
   },
   {
     "name": "home2",
     "path": "/home2",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\home2\\\\index.vue",
-    "chunkName": "pages/home2/index"
+    "chunkName": "pages/home2/index",
+    "_name": "_94eb8ed8"
   },
   {
     "name": "home2-light",
     "path": "/home2-light",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\home2-light\\\\index.vue",
-    "chunkName": "pages/home2-light/index"
+    "chunkName": "pages/home2-light/index",
+    "_name": "_43c28f2a"
   },
   {
     "name": "home3",
     "path": "/home3",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\home3\\\\index.vue",
-    "chunkName": "pages/home3/index"
+    "chunkName": "pages/home3/index",
+    "_name": "_8588441a"
   },
   {
     "name": "home4",
     "path": "/home4",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\home4\\\\index.vue",
-    "chunkName": "pages/home4/index"
+    "chunkName": "pages/home4/index",
+    "_name": "_7624f95c"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\login\\\\index.vue",
-    "chunkName": "pages/login/index"
+    "chunkName": "pages/login/index",
+    "_name": "_784dd29e"
   },
   {
     "name": "perfil",
     "path": "/perfil",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\perfil\\\\index.vue",
-    "chunkName": "pages/perfil/index"
+    "chunkName": "pages/perfil/index",
+    "_name": "_7e1b5681"
   },
   {
     "name": "project-details",
     "path": "/project-details",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\project-details\\\\index.vue",
-    "chunkName": "pages/project-details/index"
+    "chunkName": "pages/project-details/index",
+    "_name": "_6e522919"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\register\\\\index.vue",
+    "chunkName": "pages/register/index",
+    "_name": "_53dd6eec"
   },
   {
     "name": "renta",
     "path": "/renta",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\renta\\\\index.vue",
-    "chunkName": "pages/renta/index"
+    "chunkName": "pages/renta/index",
+    "_name": "_47d3445f"
   },
   {
     "name": "works1",
     "path": "/works1",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\works1\\\\index.vue",
-    "chunkName": "pages/works1/index"
+    "chunkName": "pages/works1/index",
+    "_name": "_76f5277e"
   },
   {
     "name": "works2",
     "path": "/works2",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\works2\\\\index.vue",
-    "chunkName": "pages/works2/index"
+    "chunkName": "pages/works2/index",
+    "_name": "_7ea6ccdd"
   },
   {
     "name": "works3",
     "path": "/works3",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\works3\\\\index.vue",
-    "chunkName": "pages/works3/index"
+    "chunkName": "pages/works3/index",
+    "_name": "_f34f1b88"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\projects\\\\SEQUOIA\\\\SEQUOIA\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_e5eb7366"
   }
 ]

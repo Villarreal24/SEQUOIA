@@ -17,6 +17,7 @@ const _7624f95c = () => interopDefault(import('..\\pages\\home4\\index.vue' /* w
 const _784dd29e = () => interopDefault(import('..\\pages\\login\\index.vue' /* webpackChunkName: "pages/login/index" */))
 const _7e1b5681 = () => interopDefault(import('..\\pages\\perfil\\index.vue' /* webpackChunkName: "pages/perfil/index" */))
 const _6e522919 = () => interopDefault(import('..\\pages\\project-details\\index.vue' /* webpackChunkName: "pages/project-details/index" */))
+const _53dd6eec = () => interopDefault(import('..\\pages\\register\\index.vue' /* webpackChunkName: "pages/register/index" */))
 const _47d3445f = () => interopDefault(import('..\\pages\\renta\\index.vue' /* webpackChunkName: "pages/renta/index" */))
 const _76f5277e = () => interopDefault(import('..\\pages\\works1\\index.vue' /* webpackChunkName: "pages/works1/index" */))
 const _7ea6ccdd = () => interopDefault(import('..\\pages\\works2\\index.vue' /* webpackChunkName: "pages/works2/index" */))
@@ -86,6 +87,10 @@ export const routerOptions = {
     path: "/project-details",
     component: _6e522919,
     name: "project-details"
+  }, {
+    path: "/register",
+    component: _53dd6eec,
+    name: "register"
   }, {
     path: "/renta",
     component: _47d3445f,

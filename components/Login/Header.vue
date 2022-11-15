@@ -6,14 +6,15 @@
           <div class="container">
             <div class="login">
               <NuxtLink class="logo" to="/">
-                <img src="/img/logo-light.png" v-if="showLogo !== false" />
+                <img src="/img/logo-light.png" />
               </NuxtLink>
             </div>
 
             <div class="row justify-content-center">
               <div class="col-lg-12 col-md-9">
                 <div class="caption center">
-                  <LoginForm />
+                  <LoginForm v-if="show === 'login'" />
+                  <RegisterForm v-if="show === 'register'" />
                 </div>
               </div>
             </div>
@@ -28,10 +29,11 @@
 
 export default {
   name: "Header",
+  props: ["show"],
   data() {
     return {
+      // show: 'register'
     }
-  },
-
+  }
 }
 </script>

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <LoginHeader />
+    <LoginHeader show="login" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Renta',
+  name: 'Login',
   layout: "light",
   head() {
     return {
