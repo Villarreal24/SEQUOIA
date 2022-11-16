@@ -95,12 +95,16 @@ export default {
                     .set({
                         name: this.form.name,
                         email: this.form.email
-                    }).then(() => {
-                        this.$nuxt.$options.router.push("/login")
-                    }).catch(err => {
-                        console.log(err)
-                        console.log("Algo salio mal")
                     })
+                    // .then(async() => {
+                    //     await this.$fire.auth.currentUser.sendEmailVerification()
+                    //         .then(() => {
+                    //             console.log("Se envio la verificación")
+                    //         })
+                    //     }).catch(err => {
+                    //         console.log(err)
+                    //         console.log("Algo salio mal")
+                    //     })
             })
             .catch(err => {
                 this.errMessage = err.message

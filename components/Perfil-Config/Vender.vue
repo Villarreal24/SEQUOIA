@@ -86,7 +86,18 @@
 
                 <div class="row justify-content-between col-12">
                     <b-col sm="8">
-                        <p>Revisa nuestros Términos y Condiciones, así como las Políticas de Privacidad.</p>
+                        <p>Revisa nuestros 
+                            <span
+                                class="text-terminos-negrita"
+                                @click="termsAndConditions"
+                                >Términos y Condiciones,
+                            </span>
+                            así como las 
+                            <span class="text-terminos-negrita"
+                                @click="privacyPolicy"
+                                >Políticas de Privacidad.
+                            </span>
+                        </p>
                     </b-col>
                     <b-col sm="1">
                         <p class="h2" v-if="existFileScriptures">
@@ -134,7 +145,18 @@
                 </div>
                 <div class="row justify-content-between col-12">
                     <b-col sm="8">
-                        <p>Revisa nuestros Términos y Condiciones, asi como las Políticas de Privacidad.</p>
+                        <p>Revisa nuestros 
+                            <span
+                                class="text-terminos-negrita"
+                                @click="termsAndConditions"
+                                >Términos y Condiciones,
+                            </span>
+                            asi como las 
+                            <span class="text-terminos-negrita"
+                                @click="privacyPolicy"
+                                >Políticas de Privacidad.
+                            </span>
+                        </p>
                     </b-col>
                     <b-col sm="1">
                         <p class="h2" v-if="existFileAssessment">
@@ -163,7 +185,6 @@
 </template>
 
 <script>
-import { saveAs } from 'file-saver';
 var FileSaver = require('file-saver');
 
 export default {
@@ -305,6 +326,25 @@ export default {
                 this.sendAssessment = false
                 this.existFileAssessment = true
             })
+        },
+        termsAndConditions() {
+            const refStore = this.$fire.storage.ref()
+                .child('documentos-legales/SEQUOIA - Términos y Condiciones de Uso.docx')
+            
+            refStore.getDownloadURL()
+                .then(url => {
+                    FileSaver.saveAs(url, "SEQUOIA - Términos y Condiciones de Uso.docx");
+                })
+        },
+        privacyPolicy() {
+            console.log("Entra")
+            const refStore = this.$fire.storage.ref()
+                .child('documentos-legales/SEQUOIA - Política de Privacidad.docx')
+            
+            refStore.getDownloadURL()
+                .then(url => {
+                    FileSaver.saveAs(url, "SEQUOIA - Política de Privacidad.docx");
+                })
         },
     },
     created() {

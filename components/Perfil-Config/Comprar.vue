@@ -64,7 +64,6 @@
 </template>
 
 <script>
-import { saveAs } from 'file-saver';
 var FileSaver = require('file-saver');
 
 export default {

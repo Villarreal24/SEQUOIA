@@ -100,9 +100,18 @@
                         </div>
                         <div class="col-12 col-lg-3">
                             <p class="profile-text-terminos pb-3">
-                                Al hacer click en "Califíquenmme", acepta nuestros
-                                <span class="text-terminos-negrita">Términos y Condiciones de servicio
-                                    y Política de privacidad.</span>
+                                Al hacer click en "Califíquenmme", acepta nuestros 
+                                <span
+                                    class="text-terminos-negrita"
+                                    @click="termsAndConditions"
+                                    >Términos y Condiciones de servicio
+                                </span>
+                                    y 
+                                <span
+                                    class="text-terminos-negrita"
+                                    @click="privacyPolicy"
+                                    >Política de privacidad.
+                                </span>
                             </p>
                             <p class="profile-text-terminos">
                                 Programa actualmente disponible en Sonora y Jalisco.
@@ -118,6 +127,7 @@
 
 <script>
 import { ValidationProvider } from 'vee-validate';
+var FileSaver = require('file-saver');
 
 export default {
     name: "Perfil-Config-Capitalizar",
@@ -158,6 +168,25 @@ export default {
                 })
                 this.form = object
             })
+        },
+        termsAndConditions() {
+            const refStore = this.$fire.storage.ref()
+                .child('documentos-legales/SEQUOIA - Términos y Condiciones de Uso.docx')
+            
+            refStore.getDownloadURL()
+                .then(url => {
+                    FileSaver.saveAs(url, "SEQUOIA - Términos y Condiciones de Uso.docx");
+                })
+        },
+        privacyPolicy() {
+            console.log("Entra")
+            const refStore = this.$fire.storage.ref()
+                .child('documentos-legales/SEQUOIA - Política de Privacidad.docx')
+            
+            refStore.getDownloadURL()
+                .then(url => {
+                    FileSaver.saveAs(url, "SEQUOIA - Política de Privacidad.docx");
+                })
         },
     }
 }

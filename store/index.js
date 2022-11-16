@@ -10,7 +10,7 @@ export const mutations = {
 
     SET_AUTH_USER: (state, authUser) => {
         let provider = ''
-        console.log(authUser)
+        // console.log(authUser)
         authUser.providerData.forEach(element => {
             if (element.providerId === 'password') {
                 provider = 'Correo electrónico'

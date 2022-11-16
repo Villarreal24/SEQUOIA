@@ -1042,6 +1042,7 @@ body {
 }
 .text-terminos-negrita {
   font-weight: 700;
+  cursor: pointer;
 }
 /* ====================== [ End Profile ] ====================== */
 /* ====================== [ Start Heading ] ====================== */
