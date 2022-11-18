@@ -4,11 +4,11 @@
       <div class="row justify-content-center">
         <div class="col-lg-11">
           <div class="post">
-            <PostHead :postData="postData" />
+            <PostHead />
             <PostContent />
             <PostPagination />
-            <PostComments :comments="postData.comments" />
-            <PostForm />
+            <!-- <PostComments :comments="postData.comments" /> -->
+            <!-- <PostForm /> -->
           </div>
         </div>
       </div>
@@ -33,10 +33,10 @@ export default {
     PostComments,
     PostForm
   },
-  data() {
-    return {
-      postData: PostData
+  computed: {
+    blogDetails() {
+      return this.$store.state.blogs.blogDetails;
     }
-  },
+  }
 }
 </script>

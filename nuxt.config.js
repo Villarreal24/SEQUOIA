@@ -95,6 +95,8 @@ export default {
           },
           firestore: true,
           storage: true,
+          functions: true,
+          hosting: true,
         }
       }
     ],

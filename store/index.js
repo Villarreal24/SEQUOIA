@@ -31,7 +31,7 @@ export const mutations = {
     },
     setProvider(state, payload) {
         state.provider = payload
-    }
+    },
 }
 
 export const actions = {

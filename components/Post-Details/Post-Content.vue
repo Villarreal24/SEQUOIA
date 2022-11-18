@@ -5,11 +5,11 @@
         <div class="cont">
           <div class="spacial">
             <p>
-              Never ever think of giving up. Winners never quit and quitters never win. Take all negative words out of your mental dictionary and focus on the solutions with utmost conviction and patience. The battle is never lost until you’ve abandon your vision.
+              {{postData.contentBlack}}
             </p>
           </div>
           <p>
-            the main component of a healthy environment for self esteem is that it needs be nurturing. The main compont of a healthy environment for self esteem is that it needs be nurturing. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional warmth. The main component of a healthy env for self esteem The main compont be nurturing It should provide unconditional
+            {{postData.content}}
           </p>
 
           <h6>- We all intend to plan ahead.</h6>
@@ -26,12 +26,12 @@
             <li><span>05</span> The main component of a healthy env for self esteem.</li>
           </ul>
 
-          <div class="quotes text-center">
+          <!-- <div class="quotes text-center">
             <p>
               Never ever think of giving up. Winners never quit and quitters never win. Take all negative words out of your mental dictionary and focus on the solutions with utmost conviction and patience. The battle is never lost until you’ve abandon your vision.
             </p>
-          </div>
-          <div class="row">
+          </div> -->
+          <!-- <div class="row">
             <div class="col-md-6">
               <div class="mb-10">
                 <img src="/img/blog/single.jpg" alt="">
@@ -49,17 +49,16 @@
           <div class="share-info">
             <div class="social">
               <a href="#0"><i class="fab fa-facebook-f"></i></a>
-              <a href="#0"><i class="fab fa-twitter"></i></a>
-              <a href="#0"><i class="fab fa-behance"></i></a>
-            </div>
-            <div class="tags">
+              <a href="#0"><i class="fab fa-instagram"></i></a>
+            </div> -->
+            <!-- <div class="tags">
               <a href="#0">Web</a>,
               <a href="#0">Themeforest</a>,
               <a href="#0">ThemesCamp</a>
-            </div>
-          </div>
+            </div> -->
+          <!-- </div> -->
         </div>
-        <div class="author">
+        <!-- <div class="author">
           <div class="author-img">
             <img src="img/blog/01.jpg" alt="">
           </div>
@@ -74,7 +73,7 @@
               <a href="#0"><i class="fab fa-behance"></i></a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -83,5 +82,10 @@
 <script>
 export default {
   name: "Post-Content",
+  computed: {
+    postData() {
+      return this.$store.state.blogs.blogDetails;
+    }
+  }
 }
 </script>
